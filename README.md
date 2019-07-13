@@ -10,7 +10,9 @@
 - [深入理解 JavaScript, 从作用域与作用域链开始](https://github.com/koala-coding/goodBlog/issues/2)
 - [深入理解 JavaScript, 从作用域与作用域链开始](https://github.com/koala-coding/goodBlog/issues/2)
 #### 高阶函数
+- [高阶函数详解与实战训练](https://github.com/koala-coding/goodBlog/issues/3)
 #### JS中的深浅拷贝与赋值
+- [搞不懂JS中赋值·浅拷贝·深拷贝的请看这里](https://github.com/koala-coding/goodBlog/issues/4)
 #### 原型链
 #### this关键字
 #### JS中的异步解决方案
@@ -22,6 +24,7 @@
 #### Node事件循环EventLoop
 #### Node核心Api-网络http
 #### Node核心Api-路径path
+- [作为一个前端工程师也要掌握的几种文件路径知识-主要针对path讲解](https://github.com/koala-coding/goodBlog/issues/5)
 #### Node核心Api-文件处理fs
 #### Node核心Api-数据流与管道stream
 #### Node核心Api-数据流与缓冲buffer
