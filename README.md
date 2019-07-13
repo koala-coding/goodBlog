@@ -1,19 +1,20 @@
 # goodBlog
 【程序员成长指北】技术栈优质文章
+
  自我介绍：我是【程序员成长指北】公众号的作者koala，一个有趣的人，坚信“今天未做完的的事，明天更不会做”。最近在做一个node高级进阶的路线，希望
 # 技术栈
 
-## 预览图
-
+#### 预览图
+![](https://user-gold-cdn.xitu.io/2019/6/22/16b7e5e8ffa60e57?w=1576&h=800&f=png&s=330091)
 ## [JS必知必会系列]
 #### 调用栈及内存管理
 #### JS数据类型知识
-[经常被面试官问道的JavaScript数据类型知识你真的懂吗？](https://github.com/koala-coding/goodBlog/issues/1)
+- [经常被面试官问道的JavaScript数据类型知识你真的懂吗？](https://github.com/koala-coding/goodBlog/issues/1)
 #### 作用域与闭包
-[深入理解 JavaScript, 从作用域与作用域链开始](https://github.com/koala-coding/goodBlog/issues/2)
-[深入理解 JavaScript, 从作用域与作用域链开始](https://github.com/koala-coding/goodBlog/issues/2)
+- [深入理解 JavaScript, 从作用域与作用域链开始](https://github.com/koala-coding/goodBlog/issues/2)
+- [深入理解 JavaScript, 从作用域与作用域链开始](https://github.com/koala-coding/goodBlog/issues/2)
 #### 高阶函数
-
+#### JS中的深浅拷贝与赋值
 #### 原型链
 #### this关键字
 #### JS中的异步解决方案
