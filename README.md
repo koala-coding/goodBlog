@@ -44,7 +44,7 @@
 #### MySql中的数据类型你未必搞懂了
 #### MySql的系统架构
 #### MySql的日志系统
-- [公司要求会使用框架vue，面试题会被问及哪些？](https://github.com/koala-coding/goodBlog/issues/8)
+- [删库跑路后真的没有办法弥补了吗？](https://github.com/koala-coding/goodBlog/issues/8)
 #### MySql中的sql语句
 #### MySql中的索引
 #### MySql中的事务和锁
