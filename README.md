@@ -52,6 +52,7 @@
 #### 框架相关面试题
 - [公司要求会使用框架vue，面试题会被问及哪些？](https://github.com/koala-coding/goodBlog/issues/6)
 - [vue中8种组件通信方式, 值得收藏!](https://github.com/koala-coding/goodBlog/issues/7)
+- [5道常见手写javascript已有api的面试题](https://github.com/koala-coding/goodBlog/issues/14)
 #### 数据库相关面试题
 #### 面试注意事项
 - [程序员面试，必要的注意事项](https://github.com/koala-coding/goodBlog/issues/13)
