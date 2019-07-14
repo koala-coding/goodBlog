@@ -8,7 +8,7 @@
 - [经常被面试官问道的JavaScript数据类型知识你真的懂吗？](https://github.com/koala-coding/goodBlog/issues/1)
 #### 作用域与闭包
 - [深入理解 JavaScript, 从作用域与作用域链开始](https://github.com/koala-coding/goodBlog/issues/2)
-- [深入理解 JavaScript, 从作用域与作用域链开始](https://github.com/koala-coding/goodBlog/issues/2)
+- [javascript中的闭包这一篇就够了](https://github.com/koala-coding/goodBlog/issues/15)
 #### 高阶函数
 - [高阶函数详解与实战训练](https://github.com/koala-coding/goodBlog/issues/3)
 #### JS中的深浅拷贝与赋值
@@ -20,6 +20,9 @@
 #### ES6中的新特性汇总
 - [ES6中类与继承的理解（java对比记忆）](https://github.com/koala-coding/goodBlog/issues/10)
 #### for循环
+- [Javascript随机获取数组中不重复的n个元素](https://github.com/koala-coding/goodBlog/issues/16)
+- [javascript数组常用函数与实战总结](https://github.com/koala-coding/goodBlog/issues/17)
+- [JS中的for循环——你可能不知道的点。](https://github.com/koala-coding/goodBlog/issues/18)
 #### 如何优雅的写JS代码
 ## [NODE必知必会系列]
 #### 开篇-我们为什么用Node做后端，它有哪些优势？
