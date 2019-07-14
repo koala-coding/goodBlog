@@ -22,6 +22,7 @@
 ## [NODE必知必会系列]
 #### 开篇-我们为什么用Node做后端，它有哪些优势？
 #### Node事件循环EventLoop
+- [一道面试题引发的node事件循环深入思考](https://github.com/koala-coding/goodBlog/issues/9)
 #### Node核心Api-网络http
 #### Node核心Api-路径path
 - [作为一个前端工程师也要掌握的几种文件路径知识-主要针对path讲解](https://github.com/koala-coding/goodBlog/issues/5)
@@ -37,6 +38,7 @@
 #### MySql中的数据类型你未必搞懂了
 #### MySql的系统架构
 #### MySql的日志系统
+- [公司要求会使用框架vue，面试题会被问及哪些？](https://github.com/koala-coding/goodBlog/issues/8)
 #### MySql中的sql语句
 #### MySql中的索引
 #### MySql中的事务和锁
