@@ -39,7 +39,6 @@
 - [说Node.js做后端开发，stream有必要了解下](https://github.com/koala-coding/goodBlog/issues/12)
 #### Node核心Api-数据流与缓冲buffer
 #### Node核心Api-集群cluster
-#### Node核心Api-集群cluster
 #### Node中的进程与线程
 #### Node后端常用框架与解析
 #### Node第三方常用npm包
@@ -50,9 +49,11 @@
 ## [MySql必知必会系列]
 #### MySql中的数据类型你未必搞懂了
 #### MySql的系统架构
+- [MySQL 基础架构你不知道的那些事！](https://github.com/koala-coding/goodBlog/issues/28)
 #### MySql的日志系统
 - [删库跑路后真的没有办法弥补了吗？](https://github.com/koala-coding/goodBlog/issues/8)
 #### MySql中的sql语句
+- [如何写优雅的SQL原生语句？](https://github.com/koala-coding/goodBlog/issues/27)
 #### MySql中的索引
 #### MySql中的事务和锁
 #### 一些你不知道的MySql优化点与不知道的错误
