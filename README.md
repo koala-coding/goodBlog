@@ -40,6 +40,9 @@
 #### Node中的进程与线程
 #### Node后端常用框架与解析
 #### Node第三方常用npm包
+- [npm config使用](https://github.com/koala-coding/goodBlog/issues/20)
+- [sequelize如何使用原生语句](https://github.com/koala-coding/goodBlog/issues/22)
+- [Sequelize Unknown column 'createdAt' in 'field list'?](https://github.com/koala-coding/goodBlog/issues/21)
 ## [MySql必知必会系列]
 #### MySql中的数据类型你未必搞懂了
 #### MySql的系统架构
@@ -49,6 +52,8 @@
 #### MySql中的索引
 #### MySql中的事务和锁
 #### 一些你不知道的MySql优化点与不知道的错误
+- [mysql按日期分组统计的查询](https://github.com/koala-coding/goodBlog/issues/19)
+- [mysql查询结果单位换算后保留两位小数](https://github.com/koala-coding/goodBlog/issues/23)
 ## [面试汇总系列]
 #### 数据结构与算法
 #### 语言相关面试题
