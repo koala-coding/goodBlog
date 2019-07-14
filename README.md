@@ -41,7 +41,14 @@
 #### MySql中的索引
 #### MySql中的事务和锁
 #### 一些你不知道的MySql优化点与不知道的错误
+## [面试汇总系列]
+#### 数据结构与算法
 
+#### 语言相关面试题
+#### 框架相关面试题
+- [公司要求会使用框架vue，面试题会被问及哪些？](https://github.com/koala-coding/goodBlog/issues/6)
+- [vue中8种组件通信方式, 值得收藏!](https://github.com/koala-coding/goodBlog/issues/7)
+#### 数据库相关面试题
 ## 技术栈预览图
 ![](https://user-gold-cdn.xitu.io/2019/6/22/16b7e5e8ffa60e57?w=1576&h=800&f=png&s=330091)
 ## 公众号图片
