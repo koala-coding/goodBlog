@@ -14,9 +14,11 @@
 #### JS中的深浅拷贝与赋值
 - [搞不懂JS中赋值·浅拷贝·深拷贝的请看这里](https://github.com/koala-coding/goodBlog/issues/4)
 #### 原型链
+- [原型链这么看好像并不难](https://github.com/koala-coding/goodBlog/issues/11)
 #### this关键字
 #### JS中的异步解决方案
 #### ES6中的新特性汇总
+- [ES6中类与继承的理解（java对比记忆）](https://github.com/koala-coding/goodBlog/issues/10)
 #### for循环
 #### 如何优雅的写JS代码
 ## [NODE必知必会系列]
@@ -28,6 +30,7 @@
 - [作为一个前端工程师也要掌握的几种文件路径知识-主要针对path讲解](https://github.com/koala-coding/goodBlog/issues/5)
 #### Node核心Api-文件处理fs
 #### Node核心Api-数据流与管道stream
+- [说Node.js做后端开发，stream有必要了解下](https://github.com/koala-coding/goodBlog/issues/12)
 #### Node核心Api-数据流与缓冲buffer
 #### Node核心Api-集群cluster
 #### Node核心Api-集群cluster
