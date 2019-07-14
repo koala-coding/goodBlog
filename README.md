@@ -17,6 +17,9 @@
 - [原型链这么看好像并不难](https://github.com/koala-coding/goodBlog/issues/11)
 #### this关键字
 #### JS中的异步解决方案
+- [回调地狱解决方案之Promise](https://github.com/koala-coding/goodBlog/issues/25)
+- [async和await的讲解](https://github.com/koala-coding/goodBlog/issues/26)
+
 #### ES6中的新特性汇总
 - [ES6中类与继承的理解（java对比记忆）](https://github.com/koala-coding/goodBlog/issues/10)
 #### for循环
@@ -43,6 +46,7 @@
 - [npm config使用](https://github.com/koala-coding/goodBlog/issues/20)
 - [sequelize如何使用原生语句](https://github.com/koala-coding/goodBlog/issues/22)
 - [Sequelize Unknown column 'createdAt' in 'field list'?](https://github.com/koala-coding/goodBlog/issues/21)
+- [(sequelize)bulkCreate函数中的updateOnDuplicate参数怎么使用 ](https://github.com/koala-coding/goodBlog/issues/24)
 ## [MySql必知必会系列]
 #### MySql中的数据类型你未必搞懂了
 #### MySql的系统架构
