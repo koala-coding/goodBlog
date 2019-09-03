@@ -1,21 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
 </head>
+
 <body>
   <div id="app"></div>
+
   <script>
+    // 回复功能
+    var gitalkOption = {
+      clientID: 'Iv1.ca952261a94733d0',
+      clientSecret: '0b9dd1936564b43b9fe28f868a57a7c31f0e8ee7',
+      repo: 'goobBook',
+      owner: 'koala-coding',
+      admin: ['koala-coding'],
+      // facebook-like distraction free mode
+      distractionFreeMode: false
+    }
     window.$docsify = {
-      name: '',
-      repo: ''
+      name: '《程序员成长指北》',
+      repo: '',
+      loadSidebar: true, // 自定义侧边栏
+      subMaxLevel: 2, //subMaxLevel类型是number(数字)，表示显示的目录层级
+      coverpage: true, //设置封面
+      search: {
+        paths: 'auto',
+        placeholder: '🔍 Type to search ',
+        noData: '😞 No Results! ',
+        depth: 6
+      },
+      pagination: {
+        previousText: 'PREVIOUS',
+        nextText: 'NEXT',
+        crossChapter: true
+      },
+
+      plugins: [
+        function (hook, vm) {
+          hook.doneEach(function () {
+            // 每次路由切换时数据全部加载完成后调用，没有参数。
+            var label, domObj, main, divEle, gitalk;
+            label = vm.route.path.split("/").pop();
+            domObj = Docsify.dom;
+            main = domObj.getNode("#main");
+            Array.apply(
+              null,
+              document.querySelectorAll("div.gitalk-container")
+            ).forEach(function (ele) {
+              ele.remove();
+            });
+            divEle = domObj.create("div");
+            divEle.id = "gitalk-container-" + label;
+            divEle.className = "gitalk-container";
+            divEle.style = "width: " + main.clientWidth + "px; margin: 0 auto 20px;";
+            domObj.appendTo(domObj.find(".content"), divEle);
+            gitalk = new Gitalk(
+              Object.assign(gitalkOption, {
+                id: !label ? "home" : label
+              })
+            );
+            gitalk.render("gitalk-container-" + label);
+          })
+
+
+        }
+      ]
+      // plugins: [
+      //   function (hook, vm) {
+      //     gitalk = new Gitalk(gitalkOption)
+
+      //     gitalk.render("gitalk-container-");
+      //   }
+      // ]
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
+
 </body>
+
 </html>
