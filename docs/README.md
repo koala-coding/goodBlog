@@ -72,4 +72,4 @@
 ## 技术栈预览图
 ![](https://user-gold-cdn.xitu.io/2019/6/22/16b7e5e8ffa60e57?w=1576&h=800&f=png&s=330091)
 ## 公众号图片
-![](https://user-gold-cdn.xitu.io/2019/6/25/16b8a3d23a52b7d0?w=940&h=400&f=jpeg&s=217901)
+![](_media/code.png)

@@ -13,7 +13,7 @@
 
 
 [GitHub](https://github.com/docsifyjs/docsify/)
-[开始阅读](#quick-start)
+[开始阅读](README.md)
 
 <!-- 背景色 -->
 ![color](#eeffc8)
