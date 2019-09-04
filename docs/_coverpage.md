@@ -1,11 +1,10 @@
 <!-- logo -->
 ![logo](_media/logo.png)
 
-# 我的文档网站
-## 个人文档网站
-> 一个神奇的文档网站生成巩固
+# 程序员成长指北
 
-* Simple and lightweight (~12kb gzipped)
+- 一个有趣的且乐于分享的人。专注 完整的 Node.js 技术栈分享，从 JavaScript 到 Node.js,再到后端数据库，祝您成为优秀的高级 Node.js 工程师。座右铭：今天未完成的，明天更不会完成
+
 
 <!-- [![stars](https://badgen.net/github/stars/Q-Angelo/Nodejs-Roadmap?icon=github&color=4ab8a1)](https://github.com/Q-Angelo/Nodejs-Roadmap) -->
 <!-- 掘金 -->

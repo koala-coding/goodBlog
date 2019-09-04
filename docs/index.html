@@ -8,15 +8,124 @@
   <meta name="description" content="Description">
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="./_lib/theme_vue.css">
   <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+  <style>
+    .aside_container{
+      position: relative;
+    }
+    .advertisement {
+      position: fixed;
+      right: 20px;
+      top: 100px;
+      width: 150px;
+      box-shadow: -1px 0 2px 0px #c5ebda;
+      padding: 10px;
+      z-index: 99;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .advertisement p,
+    h4 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .advertisement .Tencent_code h4 {
+      font-size: 15px;
+      color: #25a46a;
+      margin-bottom: 10px;
+    }
+
+    .advertisement .personal_code {
+      margin-top: 20px;
+    }
+
+    .advertisement .personal_code h4 {
+      font-size: 15px;
+      color: #25a46a;
+      margin-bottom: 10px;
+    }
+
+    .advertisement .close_code {
+      display: none;
+      position: absolute;
+      left: -8px;
+      top: -8px;
+    }
+
+    .advertisement .close_code img {
+      width: 18px;
+    }
+
+    .open_code {
+      position: fixed;
+      right: -5px;
+      top: 250px;
+      display: none;
+    }
+
+    .markdown-section {
+      margin: 0 5% !important;
+    }
+
+    @media screen and (max-width: 600px) {
+      .advertisement .close_code {
+        display: block;
+      }
+      .markdown-section{
+        margin: 0 0% !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <div id="app"></div>
+  <!-- 自定义导航 -->
+
+  <div id="app">
+    <img src="./_media/loading.gif" alt="">
+  </div>
+  <div class="aside_container">
+    <div class="advertisement">
+      <div class="Tencent_code">
+        <h4>关注作者公众号</h4>
+        <p style="font-size: 12px;">万千小伙伴陪你一起学</p>
+        <img src="./_media/public_code.jpg" alt="">
+      </div>
+      <div class="personal_code">
+        <h4>加群前端交流群</h4>
+        <p style="font-size: 12px;">扫描二维码,备注<em style="font-style: normal; color: #25a46a;font-weight: bold"> 加群
+          </em>,拉你入群一起学习</p>
+        <img src="./_media/xiaobo.jpg" alt="">
+      </div>
+      <div class="close_code">
+        <img src="./_media/close.png" alt="" class="close">
+      </div>
+    </div>
+    <div class="open_code">
+      <img src="./_media/right@2x.png" alt="">
+    </div>
+  </div>
+
 
   <script>
-    // 回复功能
+    var closeBtn = document.querySelector('.close_code');
+    var openBtn = document.querySelector('.open_code');
+    var advertisement = document.querySelector('.advertisement')
+    closeBtn.addEventListener('click', function () {
+      openBtn.style.display = 'block';
+      advertisement.style.display = "none"
+    })
+    openBtn.addEventListener('click', function(){
+      openBtn.style.display = 'none';
+      advertisement.style.display = "block"
+    })
+  </script>
+
+  <script>
+    // 留言plugin config
     var gitalkOption = {
       clientID: 'Iv1.ca952261a94733d0',
       clientSecret: '0b9dd1936564b43b9fe28f868a57a7c31f0e8ee7',
@@ -27,15 +136,17 @@
       distractionFreeMode: false
     }
     window.$docsify = {
-      name: '《程序员成长指北》',
-      repo: '',
-      loadSidebar: true, // 自定义侧边栏
-      subMaxLevel: 2, //subMaxLevel类型是number(数字)，表示显示的目录层级
-      coverpage: true, //设置封面
+      name: '程序员成长指北', // 侧边导航名字
+      repo: 'https://github.com/koala-coding/goodBlog',
+      loadSidebar: true, // 自定义侧边目录
+      loadSidebar: 'summary.md', //侧边目录
+      subMaxLevel: 2, // 导航最大层级
+      auto2top: true, // 切换页面后自动跳转到页面顶部
+      // coverpage: true, // 封面
       search: {
         paths: 'auto',
-        placeholder: '🔍 Type to search ',
-        noData: '😞 No Results! ',
+        placeholder: '输入搜索...',
+        noData: '暂时无搜索结果...',
         depth: 6
       },
       pagination: {
@@ -47,7 +158,6 @@
       plugins: [
         function (hook, vm) {
           hook.doneEach(function () {
-            // 每次路由切换时数据全部加载完成后调用，没有参数。
             var label, domObj, main, divEle, gitalk;
             label = vm.route.path.split("/").pop();
             domObj = Docsify.dom;
