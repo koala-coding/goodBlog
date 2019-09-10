@@ -11,9 +11,24 @@
   <link rel="stylesheet" href="./_lib/theme_vue.css">
   <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
   <style>
-    .aside_container{
+    .app-nav.custom_nav {
+      position: fixed;
+      padding: 25px 60px 0 0;
+      margin: 0;
+    
+    }
+
+    .custom_nav.active {
+      width: calc(100% - 300px);
+      background-color: #fff;
+      height: 64px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .aside_container {
       position: relative;
     }
+
     .advertisement {
       position: fixed;
       right: 20px;
@@ -74,16 +89,33 @@
       .advertisement .close_code {
         display: block;
       }
-      .markdown-section{
+
+      .markdown-section {
         margin: 0 0% !important;
       }
+    }
+    /* 覆盖样式 */
+    /* github图标链接 */
+    .github-corner{
+      z-index: 3;
+    }
+    .app-sub-sidebar li:before{
+      content: "☆";
+    }
+    .sidebar-nav >ul >li >ul>li{
+      font-weight: bold;
     }
   </style>
 </head>
 
 <body>
-  <!-- 自定义导航 -->
-
+  <!-- 通过配置文件自定义导航 -->
+  <nav class="custom_nav active">
+    <a href="#/">Home</a>
+    <a href="#/home2">NodeJS</a>
+    <a href="#/NodeJS">数据库</a>
+    <a href="#/NodeJS">vue</a>
+  </nav>
   <div id="app">
     <img src="./_media/loading.gif" alt="">
   </div>
@@ -109,6 +141,17 @@
     </div>
   </div>
 
+  <script>
+    var _mtac = {};
+    (function () {
+      var mta = document.createElement("script");
+      mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+      mta.setAttribute("name", "MTAH5");
+      mta.setAttribute("sid", "500696124");
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(mta, s);
+    })();
+  </script>
 
   <script>
     var closeBtn = document.querySelector('.close_code');
@@ -118,7 +161,7 @@
       openBtn.style.display = 'block';
       advertisement.style.display = "none"
     })
-    openBtn.addEventListener('click', function(){
+    openBtn.addEventListener('click', function () {
       openBtn.style.display = 'none';
       advertisement.style.display = "block"
     })
@@ -136,13 +179,13 @@
       distractionFreeMode: false
     }
     window.$docsify = {
-      name: '程序员成长指北', // 侧边导航名字
+      name: '《全栈开发》', // 侧边导航名字
       repo: 'https://github.com/koala-coding/goodBlog',
       loadSidebar: true, // 自定义侧边目录
       loadSidebar: 'summary.md', //侧边目录
       subMaxLevel: 2, // 导航最大层级
       auto2top: true, // 切换页面后自动跳转到页面顶部
-      // coverpage: true, // 封面
+      coverpage: true, // 封面
       search: {
         paths: 'auto',
         placeholder: '输入搜索...',
@@ -157,29 +200,30 @@
 
       plugins: [
         function (hook, vm) {
-          hook.doneEach(function () {
-            var label, domObj, main, divEle, gitalk;
-            label = vm.route.path.split("/").pop();
-            domObj = Docsify.dom;
-            main = domObj.getNode("#main");
-            Array.apply(
-              null,
-              document.querySelectorAll("div.gitalk-container")
-            ).forEach(function (ele) {
-              ele.remove();
-            });
-            divEle = domObj.create("div");
-            divEle.id = "gitalk-container-" + label;
-            divEle.className = "gitalk-container";
-            divEle.style = "width: " + main.clientWidth + "px; margin: 0 auto 20px;";
-            domObj.appendTo(domObj.find(".content"), divEle);
-            gitalk = new Gitalk(
-              Object.assign(gitalkOption, {
-                id: !label ? "home" : label
-              })
-            );
-            gitalk.render("gitalk-container-" + label);
-          })
+          // 留言
+          // hook.doneEach(function () {
+          //   var label, domObj, main, divEle, gitalk;
+          //   label = vm.route.path.split("/").pop();
+          //   domObj = Docsify.dom;
+          //   main = domObj.getNode("#main");
+          //   Array.apply(
+          //     null,
+          //     document.querySelectorAll("div.gitalk-container")
+          //   ).forEach(function (ele) {
+          //     ele.remove();
+          //   });
+          //   divEle = domObj.create("div");
+          //   divEle.id = "gitalk-container-" + label;
+          //   divEle.className = "gitalk-container";
+          //   divEle.style = "width: " + main.clientWidth + "px; margin: 0 auto 20px;";
+          //   domObj.appendTo(domObj.find(".content"), divEle);
+          //   gitalk = new Gitalk(
+          //     Object.assign(gitalkOption, {
+          //       id: !label ? "home" : label
+          //     })
+          //   );
+          //   gitalk.render("gitalk-container-" + label);
+          // })
 
 
         }
@@ -193,7 +237,9 @@
       // ]
     }
   </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <!-- <script src="//unpkg.com/docsify/lib/docsify.min.js"></script> -->
+
+  <script src="./_lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
   <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>

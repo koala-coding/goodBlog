@@ -1,5 +1,6 @@
-<!-- logo -->
+<!-- 封面页 -->
 ![logo](_media/logo.png)
+
 
 # 程序员成长指北
 
@@ -15,4 +16,4 @@
 [开始阅读](README.md)
 
 <!-- 背景色 -->
-![color](#eeffc8)
+![color](#fff)
