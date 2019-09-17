@@ -449,11 +449,11 @@ console.log(lenArray);//[10,3,4,1,6]
 
 大家好，我是koala，公众号「程序员成长指北」作者，这篇文章是【JS必知必会系列】的高阶函数讲解。目前在做一个node后端工程师进阶路线，加入我们一起学习吧！
 
-![](https://user-gold-cdn.xitu.io/2019/6/25/16b8a3c3064ef334?w=1576&h=800&f=png&s=330091)
+![](http://img.xiaogangzai.cn/way.jpg)
 
 
 
 ### 加入我们
 
-![](https://user-gold-cdn.xitu.io/2019/6/25/16b8a3d23a52b7d0?w=940&h=400&f=jpeg&s=217901)
+![](http://img.xiaogangzai.cn/code.jpg)
 

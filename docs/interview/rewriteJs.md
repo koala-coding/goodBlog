@@ -3,7 +3,7 @@
 
 ### 模仿实现new创建对象
 
-```
+```javascript
 /**
  * 模仿 new
  * @return {} 
@@ -26,7 +26,7 @@ let p = createNew(Person, 'kaola');
 ### 模仿实现instanceof
 
 
-```
+```javascript
 /**
  * 模仿实现 instanceof
  * @param   left  [左侧参数为一个实例对象]
@@ -51,7 +51,7 @@ function instanceOf (left, right) {
 
 ### 模仿实现call
 
-```
+```javascript
 /**
  * 模仿call
  * @param  context [要绑定的this对象]
@@ -76,7 +76,7 @@ Function.prototype.call_new = function(context) {
 
 ### 模仿实现apply
 
-```
+```javascript
 /**
  * 模仿apply
  * @param   context [要绑定的this对象]
@@ -105,7 +105,7 @@ Function.prototype.apply_new = function(context) {
 ### 模仿实现bind
 
 
-```
+```javascript
 /**
  * 模仿 bind
  * @param   context [要绑定的this对象]

@@ -641,8 +641,8 @@ export default {
 
 今天就分享这么多，如果对分享的内容感兴趣，可以关注公众号「程序员成长指北」，或者加入技术交流群，大家一起讨论。
 
-![](https://user-gold-cdn.xitu.io/2019/7/11/16bdf56b98b158f9?w=484&h=658&f=jpeg&s=76891)
+![](http://img.xiaogangzai.cn/way.jpg)
 加入我们一起学习吧！
-![](https://user-gold-cdn.xitu.io/2019/6/25/16b8a3d23a52b7d0?w=940&h=400&f=jpeg&s=217901)
+![](http://img.xiaogangzai.cn/code.jpg)
 
 

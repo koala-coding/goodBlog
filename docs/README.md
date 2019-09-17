@@ -20,7 +20,7 @@
 * [`资料`](/javascript/base.md)
 
 ### 技术栈预览图
-![](_media/16b7e5e8ffa60e57.jpg)
+![](http://img.xiaogangzai.cn/way.jpg)
 
 ### 参与贡献
 

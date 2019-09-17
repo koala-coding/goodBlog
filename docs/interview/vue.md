@@ -1,7 +1,31 @@
 如果你是一个已经在学习前端开发的初学者亦或者是一名在代码界纵横多年的程序员，那你一定知道现在最火的前端框架之一Vue.js。它相比于React与Angular上手更加容易，或许这也是很多初学者选择vue的原因之一。
-![在这里插入图片描述](https://user-gold-cdn.xitu.io/2019/6/3/16b1b78ef5b28fe0?w=714&h=890&f=jpeg&s=64322)
+![在这里插入图片描述](https://camo.githubusercontent.com/f20591892dcbfa78c2bcce21c428fedfde617759/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031392f362f332f313662316237386566356232386665303f773d37313426683d38393026663d6a70656726733d3634333232)
+
 我们看到很多招聘上都写着掌握vue开发项目，那么面试都会问什么呢？别急，下面是我给大家整理了一份比较全面的Vue面试高频考题解析小册。
-![在这里插入图片描述](https://user-gold-cdn.xitu.io/2019/6/3/16b1b79c60741c24?w=505&h=548&f=jpeg&s=69329)
+
+![在这里插入图片描述](http://img.xiaogangzai.cn/16b1b79c60741c24.jpg)
+
+## 快速导航
+
+- [对于MVVM的理解](#对于MVVM的理解)
+- [开发中常用的指令有哪些](#开发中常用的指令有哪些)
+- [请详细说下你对vue生命周期的理解](#请详细说下你对vue生命周期的理解)
+- [Vue的双向数据绑定原理是什么](#Vue的双向数据绑定原理是什么)
+- [Proxy相比于defineProperty的优势](#Proxy相比于defineProperty的优势)
+- [vue-router有哪几种导航守卫?](#vue-router有哪几种导航守卫)
+    * [1.全局守卫](#_1全局守卫)
+    * [2.路由独享守卫](#_2路由独享守卫)
+    * [3.路由组件内的守卫](#_3路由组件内的守卫)
+- [Vue的路由实现：hash模式 和 history模式](#Vue的路由实现hash模式和history模式)
+    * [hash模式](#hash模式：)
+    * [history模式：](#history模式：)
+- [组件之间的传值通信](#组件之间的传值通信)
+    * [1.父组件给子组件传值](#_1父组件给子组件传值)
+    * [2.子组件向父组件通信](#_2子组件向父组件通信)
+    * [3.非父子, 兄弟组件之间通信](#_3非父子,兄弟组件之间通信)
+- [Vue与Angular以及React的区别？](#Vue与Angular以及React的区别？)
+- [vuex是什么？怎么使用？哪种功能场景使用它？](#vuex是什么？怎么使用？哪种功能场景使用它？)
+
 
 ## 对于MVVM的理解
 **MVVM** 是 Model-View-ViewModel 的缩写
@@ -95,7 +119,7 @@ vue.js 是采用数据劫持结合发布者-订阅者模式的方式，通过Obj
 </html>
 
 ```
-##  Proxy 相比于 defineProperty 的优势
+##  Proxy相比于defineProperty的优势 
 Object.defineProperty() 的问题主要有三个：
 - 不能监听数组的变化
 - 必须遍历对象的每个属性
@@ -109,7 +133,7 @@ Proxy 在 ES2015 规范中被正式加入，它有以下几个特点：
 - Proxy 的第二个参数可以有 13 种拦截方法，这比起 Object.defineProperty() 要更加丰富
 - Proxy 作为新标准受到浏览器厂商的重点关注和性能优化，相比之下 Object.defineProperty() 是一个已有的老方法。
 
-## vue-router 有哪几种导航守卫?
+## vue-router有哪几种导航守卫
 - 全局守卫
 - 路由独享守卫
 - 路由组件内的守卫
@@ -160,7 +184,7 @@ const router = new VueRouter({
 3. beforeRouteLeave 离开当前路由时, 导航离开该组件的对应路由时调用，可以访问组件实例 `this`
 
 
-## Vue的路由实现：hash模式 和 history模式
+## Vue的路由实现:hash模式和history模式
 ### hash模式：
 在浏览器中符号“#”，#以及#后面的字符称之为hash，用window.location.hash读取；
 特点：hash虽然在URL中，但不被包括在HTTP请求中；用来指导浏览器动作，对服务端安全无用，hash不会重加载页面。
@@ -174,11 +198,11 @@ history 模式下，前端的 URL 必须和实际向后端发起请求的 URL �
 ## 组件之间的传值通信
 组件之间通讯分为三种: 父传子、子传父、兄弟组件之间的通讯
 
-#### 1. 父组件给子组件传值
+#### 1.父组件给子组件传值
 使用`props`，父组件可以使用`props`向子组件传递数据。
 
 父组件vue模板father.vue:
-```javascript
+```html
 <template>
     <child :msg="message"></child>
 </template>
@@ -217,12 +241,12 @@ export default {
 </script>
 ```
 
-#### 2. 子组件向父组件通信
+#### 2.子组件向父组件通信
 父组件向子组件传递事件方法，子组件通过$emit触发事件，回调给父组件。
 
 父组件vue模板father.vue:
 
-```javascript
+```html
 <template>
     <child @msgFunc="func"></child>
 </template>
@@ -245,7 +269,7 @@ export default {
 
 子组件vue模板child.vue:
 
-```javascript
+```html
 <template>
     <button @click="handleClick">点我</button>
 </template>
@@ -270,7 +294,7 @@ export default {
 ```
 
 
-### 3. 非父子, 兄弟组件之间通信
+### 3.非父子,兄弟组件之间通信
 vue2中废弃了$dispatch和$broadcast广播和分发事件的方法。父子组件中可以用props和$emit()。如何实现非父子组件间的通信，可以通过实例一个vue实例Bus作为媒介，要相互通信的兄弟组件之中，都引入Bus，然后通过分别调用Bus事件触发和监听来实现通信和参数传递。
 Bus.js可以是这样:
 
@@ -281,7 +305,7 @@ export default new Vue()
 
 在需要通信的组件都引入Bus.js:
 
-```javascript
+```html
 <template>
 	<button @click="toBus">子组件传给兄弟组件</button>
 </template>
@@ -344,7 +368,8 @@ export default {
 3. 它通过 mapState 把全局的 state 和 getters 映射到当前组件的 computed 计算属性
 
 vuex的使用借助官方提供的一张图来说明:
-![在这里插入图片描述](https://user-gold-cdn.xitu.io/2019/6/3/16b1b698a29094b9?w=643&h=510&f=png&s=32733)
+![在这里插入图片描述](http://img.xiaogangzai.cn/16b1b698a29094b9.jpg)
+
 Vuex有5种属性: 分别是 state、getter、mutation、action、module;
 
 #### state
@@ -382,13 +407,12 @@ vuex 的 State 在单页应用的开发中本身具有一个“数据库”的�
 
 大家好，我是koala，公众号「程序员成长指北」作者，这篇文章是【JS必知必会系列】的高阶函数讲解。目前在做一个node后端工程师进阶路线，加入我们一起学习吧！
 
-![](https://user-gold-cdn.xitu.io/2019/6/25/16b8a3c3064ef334?w=1576&h=800&f=png&s=330091)
-
+![](http://img.xiaogangzai.cn/way.jpg)
 
 
 ### 加入我们
 
-![](https://user-gold-cdn.xitu.io/2019/6/25/16b8a3d23a52b7d0?w=940&h=400&f=jpeg&s=217901)
+![](http://img.xiaogangzai.cn/code.jpg)
 
 
 

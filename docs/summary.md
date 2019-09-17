@@ -7,6 +7,9 @@
     * [作用域](/javascript/scoped.md)
     * [闭包](/javascript/closure.md)
     * [高阶函数](/javascript/higherFunc.md)
+    * [js中赋值•浅拷贝•深拷贝](/javascript/copy.md)
+    * [原型链](/javascript/prototype.md)
+    * [类与继承](/javascript/classInherit.md)
 * Node系列
     * [node事件循环](/node/eventLoop.md)
     * [node核心模块-path](/node/path.md)
