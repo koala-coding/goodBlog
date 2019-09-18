@@ -10,11 +10,19 @@
     * [js中赋值•浅拷贝•深拷贝](/javascript/copy.md)
     * [原型链](/javascript/prototype.md)
     * [类与继承](/javascript/classInherit.md)
+    * [this关键字](/javascript/this.md)
+    * [promise](/javascript/promise.md)
+    * [async和await讲解](/javascript/async-await.md)
+    * [exports和module.exports的区别](/javascript/exports.md)
+
 * Node系列
+    * [node.js究竟是什么](/node/what.md)
     * [node事件循环](/node/eventLoop.md)
     * [node核心模块-path](/node/path.md)
+    * [node核心模块-fs](/node/fs.md)
     * [node核心模块-stream](/node/stream.md)
-
+    * [深入理解进程与线程](/node/processAndThread.md)
+    * [nodejs十个常见误区](/node/errors.md)
 - DataBase
     - [数据库类型](/database/README.md)
     - <details><summary><b>Redis</b></summary>
