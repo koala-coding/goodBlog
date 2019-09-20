@@ -14,8 +14,26 @@
 ### 博客技术栈目录
 - #### JavaScript必知必会
   - [数据类型][经常被面试官问道的JavaScript数据类型知识你真的懂吗？](/docs/javascript/datatype.md)
-- [`JavaScript必知必会`](/docs/javascript/datatype.md)
-- [`NODE必知必会系列`](/docs/node/path.md)
+  - [作用域][深入理解 JavaScript, 从作用域与作用域链开始](/docs/javascript/scoped.md)
+  - [闭包][javascript中的闭包这一篇就够了](/docs/javascript/closure.md)
+  - [高阶函数][高阶函数详解与实战训练](/docs/javascript/higherFunc.md)
+  - [赋值拷贝][js中赋值•浅拷贝•深拷贝](/docs/javascript/copy.md)
+  - [原型链][原型链这么看好像并不难](/docs/javascript/prototype.md)
+  - [类与继承][ES6中类与继承的理解（java对比记忆）](/docs/javascript/classInherit.md)
+  - [this关键字][this关键字](/docs/javascript/this.md)
+  - [promise][promise](/docs/javascript/promise.md)
+  - [async和await][async和await讲解](/docs/javascript/async-await.md)
+  - [exports和module.exports][exports和module.exports的区别](/docs/javascript/exports.md)  
+
+- #### Nodejs系列
+  - [了解nodejs][node.js究竟是什么](/docs/node/what.md)
+  - [事件循环][node事件循环](/docs/node/eventLoop.md)
+  - [path模块][node核心模块-path](/docs/node/path.md)
+  - [fs模块][node核心模块-fs](/docs/node/fs.md)
+  - [stream模块][node核心模块-stream](/docs/node/stream.md)
+  - [进程与线程][深入理解进程与线程](/docs/node/processAndThread.md)
+  - [常见误区][nodejs十个常见误区](/docs/node/errors.md)
+  
 - [`MySql必知必会系列`](/docs/database/mysql/baseFrame.md)
 - [`前端框架`](/docs/webframe/vue/messageWays.md)
 - [`面试汇总系列`](/docs/interview/vue.md)
