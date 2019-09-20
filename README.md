@@ -5,7 +5,7 @@
 ## [JS必知必会系列]
 #### 调用栈及内存管理
 #### JS数据类型知识
-- [经常被面试官问道的JavaScript数据类型知识你真的懂吗？](https://github.com/koala-coding/goodBlog/issues/1)
+- [经常被面试官问道的JavaScript数据类型知识你真的懂吗？](/docs/javascript/datatype.md)
 #### 作用域与闭包
 - [深入理解 JavaScript, 从作用域与作用域链开始](https://github.com/koala-coding/goodBlog/issues/2)
 - [javascript中的闭包这一篇就够了](https://github.com/koala-coding/goodBlog/issues/15)
