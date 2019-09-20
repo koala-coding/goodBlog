@@ -57,7 +57,7 @@
 ![](http://img.xiaogangzai.cn/way.jpg)
 
 ### 加入我们
-![]http://img.xiaogangzai.cn/follow.gif
+![](http://img.xiaogangzai.cn/follow.gif)
 
 ### 参与贡献
 
