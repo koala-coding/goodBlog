@@ -1,75 +1,30 @@
-# 【程序员成长指北】技术栈优质文章汇总
+# 【程序员成长指北】全栈开发
 
-自我介绍：我是【程序员成长指北】公众号的作者koala，一个有趣的人，坚信“今天未做完的的事，明天更不会做”。最近在做一个node高级进阶的路线，可以关注我的公众号，加入我们一起学习进步吧！
+[<img src="https://img.shields.io/badge/%E6%8E%98%E9%87%91-4k-42b983.svg">](https://juejin.im/user/5cf288385188254abb110e3b)
+[<img src="https://img.shields.io/badge/思否-2.3k-42b983.svg">](https://segmentfault.com/u/na_5a545653c24d9)
+[<img src="https://img.shields.io/badge/慕课-认证作者-42b983.svg">](https://segmentfault.com/u/na_5a545653c24d9)
 
-## [JS必知必会系列]
-#### 调用栈及内存管理
-#### JS数据类型知识
-- [经常被面试官问道的JavaScript数据类型知识你真的懂吗？](/docs/javascript/datatype.md)
-#### 作用域与闭包
-- [深入理解 JavaScript, 从作用域与作用域链开始](https://github.com/koala-coding/goodBlog/issues/2)
-- [javascript中的闭包这一篇就够了](https://github.com/koala-coding/goodBlog/issues/15)
-#### 高阶函数
-- [高阶函数详解与实战训练](https://github.com/koala-coding/goodBlog/issues/3)
-#### JS中的深浅拷贝与赋值
-- [搞不懂JS中赋值·浅拷贝·深拷贝的请看这里](https://github.com/koala-coding/goodBlog/issues/4)
-#### 原型链
-- [原型链这么看好像并不难](https://github.com/koala-coding/goodBlog/issues/11)
-#### this关键字
-#### JS中的异步解决方案
-- [回调地狱解决方案之Promise](https://github.com/koala-coding/goodBlog/issues/25)
-- [async和await的讲解](https://github.com/koala-coding/goodBlog/issues/26)
+> 这里是 koala 的博客, 最近在做一个node高级进阶的学习路线, 
 
-#### ES6中的新特性汇总
-- [ES6中类与继承的理解（java对比记忆）](https://github.com/koala-coding/goodBlog/issues/10)
-#### for循环
-- [Javascript随机获取数组中不重复的n个元素](https://github.com/koala-coding/goodBlog/issues/16)
-- [javascript数组常用函数与实战总结](https://github.com/koala-coding/goodBlog/issues/17)
-- [JS中的for循环——你可能不知道的点。](https://github.com/koala-coding/goodBlog/issues/18)
-#### 如何优雅的写JS代码
-## [NODE必知必会系列]
-#### 开篇-我们为什么用Node做后端，它有哪些优势？
-#### Node事件循环EventLoop
-- [一道面试题引发的node事件循环深入思考](https://github.com/koala-coding/goodBlog/issues/9)
-#### Node核心Api-网络http
-#### Node核心Api-路径path
-- [作为一个前端工程师也要掌握的几种文件路径知识-主要针对path讲解](https://github.com/koala-coding/goodBlog/issues/5)
-#### Node核心Api-文件处理fs
-#### Node核心Api-数据流与管道stream
-- [说Node.js做后端开发，stream有必要了解下](https://github.com/koala-coding/goodBlog/issues/12)
-#### Node核心Api-数据流与缓冲buffer
-#### Node核心Api-集群cluster
-#### Node中的进程与线程
-#### Node后端常用框架与解析
-#### Node第三方常用npm包
-- [npm config使用](https://github.com/koala-coding/goodBlog/issues/20)
-- [sequelize如何使用原生语句](https://github.com/koala-coding/goodBlog/issues/22)
-- [Sequelize Unknown column 'createdAt' in 'field list'?](https://github.com/koala-coding/goodBlog/issues/21)
-- [(sequelize)bulkCreate函数中的updateOnDuplicate参数怎么使用 ](https://github.com/koala-coding/goodBlog/issues/24)
-## [MySql必知必会系列]
-#### MySql中的数据类型你未必搞懂了
-#### MySql的系统架构
-- [MySQL 基础架构你不知道的那些事！](https://github.com/koala-coding/goodBlog/issues/28)
-#### MySql的日志系统
-- [删库跑路后真的没有办法弥补了吗？](https://github.com/koala-coding/goodBlog/issues/8)
-#### MySql中的sql语句
-- [如何写优雅的SQL原生语句？](https://github.com/koala-coding/goodBlog/issues/27)
-#### MySql中的索引
-#### MySql中的事务和锁
-#### 一些你不知道的MySql优化点与不知道的错误
-- [mysql按日期分组统计的查询](https://github.com/koala-coding/goodBlog/issues/19)
-- [mysql查询结果单位换算后保留两位小数](https://github.com/koala-coding/goodBlog/issues/23)
-## [面试汇总系列]
-#### 数据结构与算法
-#### 语言相关面试题
-#### 框架相关面试题
-- [公司要求会使用框架vue，面试题会被问及哪些？](https://github.com/koala-coding/goodBlog/issues/6)
-- [vue中8种组件通信方式, 值得收藏!](https://github.com/koala-coding/goodBlog/issues/7)
-- [5道常见手写javascript已有api的面试题](https://github.com/koala-coding/goodBlog/issues/14)
-#### 数据库相关面试题
-#### 面试注意事项
-- [程序员面试，必要的注意事项](https://github.com/koala-coding/goodBlog/issues/13)
-## 技术栈预览图
+**加入我们**
+- 搜索公众号 **```程序员成长指北```** 或者 **```扫描右侧二维码```** 进行关注
+- [Github链接在此, 欢迎点个 Start](https://github.com/koala-coding/goodBlog)
+- 将好文章分享给您身边更多的小伙伴
+
+### 博客技术栈目录
+* [`JavaScript必知必会`](/docs/javascript/datatype.md)
+* [`NODE必知必会系列`](/docs/node/path.md)
+* [`MySql必知必会系列`](/docs/database/mysql/baseFrame.md)
+* [`前端框架`](/docs/webframe/vue/messageWays.md)
+* [`面试汇总系列`](/docs/interview/vue.md)
+* [`资料`](/docs/javascript/base.md)
+
+### 技术栈预览图
 ![](http://img.xiaogangzai.cn/way.jpg)
-## 公众号图片
-![](http://img.xiaogangzai.cn/code.jpg)
+
+### 参与贡献
+
+1. 如果您对本项目有任何建议或发现文中内容有误的，欢迎提交 issues 进行指正。
+2. 对于文中我没有涉及到知识点，欢迎提交 PR。
+3. 如果您有文章推荐请以 markdown 格式到邮箱 `1487067537@qq.com`，[中文技术文档的写作规范指南](https://github.com/ruanyf/document-style-guide)。
+
