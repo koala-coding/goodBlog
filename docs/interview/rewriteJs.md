@@ -1,7 +1,7 @@
 ## 前言
 有些内容虽然不用，但是不代表面试不考。这里为大家送上5道常见的手写面试题，希望你们在面试中能遇到某一道也好，这样这篇文章就没有白写。
 
-### 模仿实现new创建对象
+## 模仿实现new创建对象
 
 ```javascript
 /**
@@ -23,7 +23,7 @@ function Person(name) {
 let p = createNew(Person, 'kaola');
 
 ```
-### 模仿实现instanceof
+## 模仿实现instanceof
 
 
 ```javascript
@@ -49,7 +49,7 @@ function instanceOf (left, right) {
 }
 ```
 
-### 模仿实现call
+## 模仿实现call
 
 ```javascript
 /**
@@ -74,7 +74,7 @@ Function.prototype.call_new = function(context) {
 ```
 
 
-### 模仿实现apply
+## 模仿实现apply
 
 ```javascript
 /**
@@ -102,7 +102,7 @@ Function.prototype.apply_new = function(context) {
 ```
 
 
-### 模仿实现bind
+## 模仿实现bind
 
 
 ```javascript

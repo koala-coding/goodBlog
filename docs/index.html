@@ -91,9 +91,18 @@
       .advertisement .close_code {
         display: block;
       }
+      .custom_nav{
+        display: none;
+      }
 
       .markdown-section {
         margin: 0 0% !important;
+      }
+      .sidebar{
+        width: 190px;
+      }
+      body.close .content{
+        transform: translateX(190px);
       }
     }
 
@@ -110,6 +119,10 @@
     .sidebar-nav>ul>li>ul>li {
       font-weight: bold;
     }
+    /* .sidebar-toggle{
+      top: 0;
+      bottom: 
+    } */
   </style>
 </head>
 
@@ -117,9 +130,9 @@
   <!-- 通过配置文件自定义导航 -->
   <nav class="custom_nav active">
     <a href="#/">Home</a>
-    <a href="#/home2">NodeJS</a>
-    <a href="#/NodeJS">数据库</a>
-    <a href="#/NodeJS">vue</a>
+    <a href="#/node/what">NodeJS</a>
+    <a href="#/database/mysql/baseFrame">数据库</a>
+    <a href="#/webframe/vue/messageWays">vue</a>
   </nav>
   <div id="app">
     <img src="./_media/loading.gif" alt="">

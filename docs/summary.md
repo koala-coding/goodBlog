@@ -55,6 +55,8 @@
 * 面试总结
     - [vue面试中常考问题](/interview/vue.md)
     - [面试常见实现js已有api](/interview/rewriteJs.md)
+    - [web前端高频面试题-js篇](/interview/js10.md)
+    - [web前端高频面试题-css篇](/interview/css.md)
     - [面试注意事项](/interview/notes.md)
 
 

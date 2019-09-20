@@ -3,7 +3,7 @@
 vue是数据驱动视图更新的框架, 所以对于vue来说组件间的数据通信非常重要，那么组件之间如何进行数据通信的呢？
 首先我们需要知道在vue中组件之间存在什么样的关系, 才更容易理解他们的通信方式, 就好像过年回家，坐着一屋子的陌生人，相互之间怎么称呼，这时就需要先知道自己和他们之间是什么样的关系。
 vue组件中关系说明:
-![image](https://user-gold-cdn.xitu.io/2019/7/11/16bde5b613aac4ee?w=462&h=402&f=png&s=58442)
+![image](http://img.xiaogangzai.cn/16bde5b613aac4ee.jpg)
 
 如上图所示, A与B、A与C、B与D、C与E组件之间是父子关系； B与C之间是兄弟关系；A与D、A与E之间是隔代关系； D与E是堂兄关系（非直系亲属）
 针对以上关系我们归类为：
@@ -15,8 +15,9 @@ vue组件中关系说明:
 
 
 
-### 一、`props` / `$emit`
+## 一、`props` / `$emit`
 父组件通过`props`的方式向子组件传递数据，而通过`$emit` 子组件可以向父组件通信。
+
 #### 1. 父组件向子组件传值
 下面通过一个例子说明父组件如何向子组件传递数据：在子组件`article.vue`中如何获取父组件`section.vue`中的数据`articles:['红楼梦', '西游记','三国演义']`
 ```html
@@ -114,7 +115,7 @@ export default {
 ```
 
 
-### 二、  `$children` / `$parent`
+## 二、  `$children` / `$parent`
 ![image](https://user-gold-cdn.xitu.io/2019/7/11/16bde62519013ad8?w=642&h=330&f=png&s=29236)
 上面这张图片是`vue`官方的解释，通过`$parent`和`$children`就可以访问组件的实例，拿到实例代表什么？代表可以访问此组件的所有方法和`data`。接下来就是怎么实现拿到指定组件的实例。
 
@@ -178,7 +179,7 @@ export default {
 #### 总结
 上面两种方式用于父子组件之间的通信， 而使用props进行父子组件通信更加普遍; 二者皆不能用于非父子组件之间的通信。
 
-### 三、`provide`/ `inject`
+## 三、`provide`/ `inject`
 #### 概念:
 `provide`/ `inject` 是`vue2.2.0`新增的api, 简单来说就是父组件中通过`provide`来提供变量, 然后再子组件中通过`inject`来注入变量。
 > 注意: 这里不论子组件嵌套有多深, 只要调用了`inject` 那么就可以注入`provide`中的数据，而不局限于只能从当前父组件的props属性中回去数据
@@ -257,7 +258,7 @@ export default {
 </script>
 ```
 
-### 四、`ref` / `refs`
+## 四、`ref` / `refs`
 `ref`：如果在普通的 DOM 元素上使用，引用指向的就是 DOM 元素；如果用在子组件上，引用就指向组件实例，可以通过实例直接调用组件的方法或访问数据， 我们看一个`ref` 来访问组件的例子:
 
 ```javascript
@@ -295,7 +296,7 @@ export default {
 ```
 
 
-### 五、eventBus
+## 五、eventBus
 `eventBus`  又称为事件总线，在vue中可以使用它来作为沟通桥梁的概念, 就像是所有组件共用相同的事件中心，可以向该中心注册发送事件或接收事件， 所以组件都可以通知其他组件。
 > eventBus也有不方便之处, 当项目较大,就容易造成难以维护的灾难
 
@@ -395,7 +396,7 @@ EventBus.$off('addition', {})
 
 
 
-### 六、Vuex
+## 六、Vuex
 #### 1.  Vuex介绍
 Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化.
 Vuex 解决了`多个视图依赖于同一状态`和`来自不同视图的行为需要变更同一状态`的问题，将开发者的精力聚焦于数据的更新而不是数据在组件之间的传递上
@@ -531,7 +532,7 @@ export default new Vuex.Store({
 ```
 
 
-### 七、` localStorage` / `sessionStorage`
+## 七、` localStorage` / `sessionStorage`
 这种通信比较简单,缺点是数据和状态比较混乱,不太容易维护。
 通过`window.localStorage.getItem(key) `获取数据
 通过`window.localStorage.setItem(key,value) `存储数据
@@ -540,7 +541,7 @@ export default new Vuex.Store({
 
 
 
-### 八 `$attrs`与 `$listeners`
+## 八 `$attrs`与 `$listeners`
 现在我们来讨论一种情况， 我们一开始给出的组件关系图中A组件与D组件是隔代关系， 那它们之前进行通信有哪些方式呢？
 1. 使用`props`绑定来进行一级一级的信息传递, 如果D组件中状态改变需要传递数据给A, 使用事件系统一级级往上传递
 2. 使用`eventBus`,这种情况下还是比较适合使用, 但是碰到多人合作开发时, 代码维护性较低, 可读性也低
@@ -632,7 +633,7 @@ export default {
 ```
 
 
-### 总结
+## 总结
 常见使用场景可以分为三类:
 - 父子组件通信: `props`; `$parent` / `$children`; `provide` / `inject` ; `ref` ;  `$attrs` / `$listeners`
 - 兄弟组件通信: `eventBus` ; 	vuex

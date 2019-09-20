@@ -9,10 +9,12 @@
 
 <!-- [![stars](https://badgen.net/github/stars/Q-Angelo/Nodejs-Roadmap?icon=github&color=4ab8a1)](https://github.com/Q-Angelo/Nodejs-Roadmap) -->
 <!-- 掘金 -->
-[<img src="https://img.shields.io/badge/%E6%8E%98%E9%87%91-3k-42b983.svg">](https://juejin.im/user/5cf288385188254abb110e3b)
+[<img src="https://img.shields.io/badge/%E6%8E%98%E9%87%91-4k-42b983.svg">](https://juejin.im/user/5cf288385188254abb110e3b)
+[<img src="https://img.shields.io/badge/思否-2.3k-42b983.svg">](https://segmentfault.com/u/na_5a545653c24d9)
+[<img src="https://img.shields.io/badge/慕课-认证作者-42b983.svg">](https://segmentfault.com/u/na_5a545653c24d9)
 
 
-[GitHub](https://github.com/docsifyjs/docsify/)
+[GitHub](https://github.com/koala-coding/goodBlog)
 [开始阅读](README.md)
 
 <!-- 背景色 -->
