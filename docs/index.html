@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <title>首页 | koala-程序员成长指北全栈技术-个人博客</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="keywords"
-    content="koala, 程序员成长指北, 全栈技术,博客" />
+  <meta name="keywords" content="koala, 程序员成长指北, 全栈技术,博客" />
   <meta name="description" content="专注于node.js的全栈技术博客" />
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -91,20 +90,35 @@
       .advertisement .close_code {
         display: block;
       }
-      .custom_nav{
+
+      .custom_nav {
         display: none;
       }
 
       .markdown-section {
         margin: 0 0% !important;
       }
-      .sidebar{
+
+      .sidebar {
         width: 190px;
       }
-      body.close .content{
+
+      body.close .content {
         transform: translateX(190px);
       }
     }
+
+    @media only screen and (min-width: 600px) {
+      .sidebar-toggle {
+        display: none;
+      }
+    }
+
+    /* @media screen and (min-width: 600px) {
+      .sidebar-toggle {
+        display: none;
+      }
+    } */
 
     /* 覆盖样式 */
     /* github图标链接 */
@@ -119,10 +133,6 @@
     .sidebar-nav>ul>li>ul>li {
       font-weight: bold;
     }
-    /* .sidebar-toggle{
-      top: 0;
-      bottom: 
-    } */
   </style>
 </head>
 
