@@ -7,9 +7,10 @@
 > 这里是 koala 的博客, 最近在做一个node高级进阶的学习路线, 
 
 **支持一下**
-- 搜索公众号 **```程序员成长指北```** 或者 **```扫描文章末尾二维码```** 进行关注
+- 搜索公众号 **```程序员成长指北```** 或者 **```扫描下方二维码```** 进行关注
 - [Github链接在此, 欢迎点个 Start](https://github.com/koala-coding/goodBlog)
 - 将好文章分享给您身边更多的小伙伴
+
 
 ### 博客技术栈目录
 - #### JavaScript必知必会
@@ -35,21 +36,26 @@
   - [常见误区][nodejs十个常见误区](/docs/node/errors.md)
 
 - #### DataBase
-  - [数据库类型][数据库类型](/docs/database/README.md)
   - ##### MySql
     - [基础架构][基础架构](/docs/database/mysql/baseFrame.md)
     - [日志系统][日志系统](/docs/database/mysql/logSystem.md)
     - [sql原生语句][日志系统](/docs/database/mysql/sql.md)
     - [sql优化实例][sql优化实例](/docs/database/mysql/optimize.md)
   - ##### Redis
+- #### 前端框架
+  - [vue组件通信方式][8种vue组件通信方式](/docs/webframe/vue/messageWays.md)
   
-- [`MySql必知必会系列`](/docs/database/mysql/baseFrame.md)
-- [`前端框架`](/docs/webframe/vue/messageWays.md)
-- [`面试汇总系列`](/docs/interview/vue.md)
-- [`资料`](/docs/javascript/base.md)
+- #### 面试总结
+  - [vue面试中常考问题][vue面试中常考问题](/docs/interview/vue.md)
+  - [面试常见实现js已有api][面试常见实现js已有api](/docs/interview/rewriteJs.md)
+  - [web前端高频面试题-js篇][web前端高频面试题-js篇](/docs/interview/js10.md)
+  - [web前端高频面试题-css篇][web前端高频面试题-css篇](/docs/interview/css.md)
+  - [面试注意事项][面试注意事项](/docs/interview/notes.md)
+  
 
 ### 技术栈预览图
 ![](http://img.xiaogangzai.cn/way.jpg)
+
 
 ### 参与贡献
 
