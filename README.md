@@ -6,18 +6,20 @@
 
 > 这里是 koala 的博客, 最近在做一个node高级进阶的学习路线, 
 
-**加入我们**
-- 搜索公众号 **```程序员成长指北```** 或者 **```扫描右侧二维码```** 进行关注
+**支持一下**
+- 搜索公众号 **```程序员成长指北```** 或者 **```扫描文章末尾二维码```** 进行关注
 - [Github链接在此, 欢迎点个 Start](https://github.com/koala-coding/goodBlog)
 - 将好文章分享给您身边更多的小伙伴
 
 ### 博客技术栈目录
-* [`JavaScript必知必会`](/docs/javascript/datatype.md)
-* [`NODE必知必会系列`](/docs/node/path.md)
-* [`MySql必知必会系列`](/docs/database/mysql/baseFrame.md)
-* [`前端框架`](/docs/webframe/vue/messageWays.md)
-* [`面试汇总系列`](/docs/interview/vue.md)
-* [`资料`](/docs/javascript/base.md)
+- #### JavaScript必知必会
+  - [数据类型][经常被面试官问道的JavaScript数据类型知识你真的懂吗？](/docs/javascript/datatype.md)
+- [`JavaScript必知必会`](/docs/javascript/datatype.md)
+- [`NODE必知必会系列`](/docs/node/path.md)
+- [`MySql必知必会系列`](/docs/database/mysql/baseFrame.md)
+- [`前端框架`](/docs/webframe/vue/messageWays.md)
+- [`面试汇总系列`](/docs/interview/vue.md)
+- [`资料`](/docs/javascript/base.md)
 
 ### 技术栈预览图
 ![](http://img.xiaogangzai.cn/way.jpg)
