@@ -5,7 +5,7 @@
 //普通的函数声明
 
 
-```
+```javascript
 async function A(){}
 ```
 
@@ -13,7 +13,7 @@ async function A(){}
 //声明一个函数表达式
 
 
-```
+```javascript
 let A=async function(){}
 ```
 
@@ -21,7 +21,7 @@ let A=async function(){}
 //async形式的箭头函数
 
 
-```
+```javascript
 let A=async ()=>{}
 ```
 
@@ -32,7 +32,7 @@ async与await实例应用，基础代码
 控制器调用与server中查询数据
 
 
-```
+```javascript
 exports.getBlogList =async (ctx,next)=>{
 return ctx.body = await ArticleServer.getBlogListServer();
 }
@@ -66,7 +66,8 @@ async与await一些注意关键点小结
 ### async与await缺点
 
 async函数中，如果有多个await关键字时，如果有一个await的状态变成了rejected，那么后面的操作都不会继续执行，promise也是同理有这样一个函数async 
-```
+
+```javascript
 function getData()
 {
 let value=await get();
@@ -78,14 +79,14 @@ return value;
 ```
 直接调用
 
-```
+```javascript
 var value=getData();
 ```
 
 是对于这个函数直接调用的时候并不是你想要的返回值，因为async方法返回的永远是一个promise，即使开发者返回的是一个常量，也会被自动调用的promise.resolve方法转换为一个promise。因此对于这种情况，上层调用方法也需要是async函数，采用如下方法
 
 
-```
+```javascript
 async function xxxx(){
 var value=await getData();
 return value;
@@ -98,7 +99,7 @@ return value;
 这个误区在一道面试题那篇文章中详细讲解过，但是还是想提一下。
 看一段代码:
 
-```
+```javascript
 async function async1(){
     console.log('async1 start')
     await async2()

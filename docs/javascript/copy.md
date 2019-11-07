@@ -293,7 +293,7 @@ console.log(obj1.b.f === obj2.b.f);
 ## 拷贝内容总结
 用一张图总结
 
-![](https://user-gold-cdn.xitu.io/2019/7/8/16bd245dc6916200?w=800&h=241&f=png&s=23103)
+![](http://img.xiaogangzai.cn/article_16.jpg)
 
 今天就分享这么多，如果对分享的内容感兴趣，可以关注公众号「程序员成长指北」，或者加入技术交流群，大家一起讨论。
 

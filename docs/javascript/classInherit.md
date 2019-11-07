@@ -1,10 +1,11 @@
-![](https://user-gold-cdn.xitu.io/2019/6/10/16b3d0be9ade6f69?w=800&h=444&f=png&s=13345)
+![](http://img.xiaogangzai.cn/article_15.jpg)
+
 ## 前言
 
 先上两段代码：
 java中定义类:
 
-```java
+```javascript
 public class Person{
     private String name;
     private int age;
@@ -78,11 +79,11 @@ console.log(greet.#name)
 
 ```javascript
 constructor(name,age){
-          this.name=name;
-          this.age=age;
-          this.getInfo()=()=>{
-              console.log("name"+this.name+"sex"+this.sex);
-             }         
+    this.name=name;
+    this.age=age;
+    this.getInfo()=()=>{
+        console.log("name"+this.name+"sex"+this.sex);
+        }         
  } 
 ```
 
@@ -113,7 +114,7 @@ java中，super关键字，可以通过super关键字来实现对父类成员的
 
 ES6中，子类中，super方法是必须调用的，因为子类本身没有自身的this对象，需要通过super方法拿到父类的this对象。在子类中，没有构造函数，那么在默认的构造方法内部自动调用super方法，继承父类的全部属性，子类的构造方法中，必须先调用super方法，然后才能调用this关键字声明其它属性。(子类的this就是在这里调用super之后，拿到父类的this，然后修改这个this来的）
 
-```java
+```javascript
 class Student extends Person{
     constructor(name,sex){
         console.log(this);//Error
@@ -131,7 +132,7 @@ java中，子类是不继承父类的构造器（构造方法或者构造函数�
 看一段面试问的比较多的代码实例：
 
 
-```java
+```javascript
 class SuperClass {
   private int n;
   SuperClass(){

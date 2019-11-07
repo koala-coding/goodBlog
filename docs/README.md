@@ -1,10 +1,10 @@
 # 【程序员成长指北】全栈开发
 
-[<img src="https://img.shields.io/badge/%E6%8E%98%E9%87%91-4k-42b983.svg">](https://juejin.im/user/5cf288385188254abb110e3b)
-[<img src="https://img.shields.io/badge/思否-2.3k-42b983.svg">](https://segmentfault.com/u/na_5a545653c24d9)
+[<img src="https://img.shields.io/badge/%E6%8E%98%E9%87%91-7k-42b983.svg">](https://juejin.im/user/5cf288385188254abb110e3b)
+[<img src="https://img.shields.io/badge/思否-2.5k-42b983.svg">](https://segmentfault.com/u/na_5a545653c24d9)
 [<img src="https://img.shields.io/badge/慕课-认证作者-42b983.svg">](https://segmentfault.com/u/na_5a545653c24d9)
 
-> 这里是 koala 的博客, 最近在做一个node高级进阶的学习路线, 
+> 这里是 koala 的博客, 最近在做一个node高级进阶的学习路线
 
 **加入我们**
 - 搜索公众号 **```程序员成长指北```** 或者 **```扫描右侧二维码```** 进行关注

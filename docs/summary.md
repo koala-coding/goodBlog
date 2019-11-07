@@ -14,6 +14,8 @@
     * [promise](/javascript/promise.md)
     * [async和await讲解](/javascript/async-await.md)
     * [exports和module.exports的区别](/javascript/exports.md)
+    * [递归](/javascript/recircleFun.md)
+
 
 * Node系列
     * [node.js究竟是什么](/node/what.md)
@@ -21,8 +23,13 @@
     * [node核心模块-path](/node/path.md)
     * [node核心模块-fs](/node/fs.md)
     * [node核心模块-stream](/node/stream.md)
+    * [node核心模块-buffer](/node/buffer.md)
     * [深入理解进程与线程](/node/processAndThread.md)
     * [nodejs十个常见误区](/node/errors.md)
+
+* 浏览器系列
+    * [渲染树的形成原理](/brower/renderTree.md)
+
 - DataBase
     - [数据库类型](/database/README.md)
     - <details><summary><b>Redis</b></summary>
@@ -87,6 +94,4 @@
     - [Stack 栈](/algorithm/stack.md) -->
 
 * 资料
-    <!-- - [书籍推荐](/materials/book.md)
-    - [Blog推荐](/materials/blog.md)
-    - [文章推荐](/materials/article.md) -->
+    - [书籍推荐](/recommend/book.md)
