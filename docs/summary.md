@@ -95,3 +95,4 @@
 
 * 资料
     - [书籍推荐](/recommend/book.md)
+    - [开源项目](/recommend/project.md)
