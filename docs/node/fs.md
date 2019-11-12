@@ -437,7 +437,7 @@ fs.readFile(fileName1, function (err, data) {
 
 demo:
 
-```JavaScript
+```javascript
 // copy 方法
 function copy(src, dest, size = 16 * 1024, callback) {
   // 打开源文件
@@ -481,7 +481,7 @@ function copy(src, dest, size = 16 * 1024, callback) {
 现在有一个文件 6.txt 内容为 “你好”，一个空文件 7.txt，我们将 6.txt 的内容写入 7.txt 中。
 
 
-```JavaScript
+```javascript
 const fs = require('fs');
 
 // buffer 的长度

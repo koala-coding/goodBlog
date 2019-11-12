@@ -96,7 +96,8 @@ BFC(Block Formatting Context)，**块级格式化上下文**，是一个独立�
 	5. 利用position和top和负margin
 
 - 水平垂直居中 
-![水平垂直居中](http://upload-images.jianshu.io/upload_images/4986060-ff4957ee8a080445?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![水平垂直居中](http://img.xiaogangzai.cn/interview_01.png)
     1.  已知元素宽高:绝对定位+margin:auto: 
 		 ```css 
 		   div{
@@ -199,7 +200,8 @@ BFC(Block Formatting Context)，**块级格式化上下文**，是一个独立�
 }
 ```
 效果如下:
-![css效果图](http://upload-images.jianshu.io/upload_images/4986060-c56a0acb3a73c875.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![css效果图](http://img.xiaogangzai.cn/interview_02.png)
+
 2. 接下来,我们将border值增大
 ```css
 .box{
@@ -209,7 +211,8 @@ BFC(Block Formatting Context)，**块级格式化上下文**，是一个独立�
 	border-color:#1b93fb #1bfb24 #efad48 #ef4848;
 }
 ```
-![image](http://upload-images.jianshu.io/upload_images/4986060-81e10555ddff893e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](http://img.xiaogangzai.cn/interview_03.png)
+
 很容易发现, border渲染并不是正方形, 而是梯形的
 
 3. 在增大border的基础下, 此时我们将盒子宽高变成0,会产生什么效果呢!
@@ -222,7 +225,8 @@ BFC(Block Formatting Context)，**块级格式化上下文**，是一个独立�
 	border-color:#1b93fb #1bfb24 #efad48 #ef4848;
 }
 ```
-![image](http://upload-images.jianshu.io/upload_images/4986060-bdc803d8cf69c4cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](http://img.xiaogangzai.cn/interview_04.png)
+
 四个三角形拼合成的矩形呈现在我们眼前,那如如果我们只想要一个三角形, 我们是不是可以设想将其他三个设为不可见; 
 
  4. 设置透明, 隐藏其中三个三角形
@@ -236,7 +240,8 @@ BFC(Block Formatting Context)，**块级格式化上下文**，是一个独立�
 	border-color:transparent transparent transparent #ef4848;
 }
 ```
-![image](http://upload-images.jianshu.io/upload_images/4986060-69f1724bc62012d0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](http://img.xiaogangzai.cn/interview_05.png)
+
 三角形这样就出来, 有木有很简单, 当然我们也可以采用逆向思维来写这个效果, 就是先将所有边框设为透明, 然后需要哪边再对其设置颜色, 效果是一样的
 
 ```css
@@ -247,7 +252,8 @@ BFC(Block Formatting Context)，**块级格式化上下文**，是一个独立�
 	border-left:50px solid #ef4848;
 }
 ```
-![image](http://upload-images.jianshu.io/upload_images/4986060-76c6a9befaeaa79a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](http://img.xiaogangzai.cn/interview_05.png)
+
 >这样给面试你的人讲,讲明白应该不是问题., 重点就是要理解**border**的应用
 
 
@@ -255,7 +261,9 @@ BFC(Block Formatting Context)，**块级格式化上下文**，是一个独立�
 
 三栏布局，顾名思义就是两边固定，中间自适应。三栏布局在开发十分常见，那么什么是三栏布局？
 即左右模块固定宽度，中间模块随浏览器变化自适应，想要完成的最终效果如下图所示：
-![三栏布局](http://upload-images.jianshu.io/upload_images/4986060-0daff36274f77021.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![三栏布局](http://img.xiaogangzai.cn/interview_06.png)
+
 下面列出四种实现方式, 在开发中可以根据实际需求选择适合自己的方法进行编码:
 - Flex 布局
 
