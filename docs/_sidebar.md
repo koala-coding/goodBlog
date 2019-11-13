@@ -16,7 +16,6 @@
     * [exports和module.exports的区别](/javascript/exports.md)
     * [递归](/javascript/recircleFun.md)
 
-aSSAD
 * Node系列
     * [node.js究竟是什么](/node/what.md)
     * [node事件循环](/node/eventLoop.md)

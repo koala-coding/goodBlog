@@ -2,7 +2,7 @@ module.exports = {
   template: './ssr.html',
   maxAge: 60 * 60 * 1000,
   config: {
-    basePath:'http://www.inode.club/#/',
+    basePath:'http://www.inode.club/',
     alias: {
       '/de-de/changelog': '/changelog',
       '/zh-cn/changelog': '/changelog',
