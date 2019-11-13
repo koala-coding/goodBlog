@@ -9,7 +9,8 @@
   <meta name="description" content="专注于node.js的全栈技术博客,程序员成长指北" />
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="./_lib/theme_vue.css">
+  <!-- <link rel="stylesheet" href="/_lib/theme_vue.css"> -->
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css" 
   <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
   <style>
     .app-nav.custom_nav {
@@ -152,7 +153,7 @@
         <h4>加群前端交流群</h4>
         <p style="font-size: 12px;">扫描二维码,备注<em style="font-style: normal; color: #25a46a;font-weight: bold"> 加群
           </em>,拉你入群一起学习</p>
-        <img src="./_media/xiaobo.jpg" alt="程序员成长指北">
+        <img src="/_media/xiaobo.jpg" alt="程序员成长指北">
       </div>
       <div class="close_code">
         <img src="./_media/close.png" alt="程序员成长指北" class="close">
@@ -204,7 +205,7 @@
       name: '《全栈开发》', // 侧边导航名字
       repo: 'https://github.com/koala-coding/goodBlog',
       loadSidebar: true, // 自定义侧边目录
-      loadSidebar: 'summary.md', //侧边目录
+      loadSidebar: '_sidebar.md', //侧边目录
       subMaxLevel: 2, // 导航最大层级
       auto2top: true, // 切换页面后自动跳转到页面顶部
       coverpage: true, // 封面
@@ -261,7 +262,8 @@
   </script>
   <!-- <script src="//unpkg.com/docsify/lib/docsify.min.js"></script> -->
 
-  <script src="./_lib/docsify.min.js"></script>
+  <!-- <script src="/_lib/docsify.min.js"></script> -->
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
   <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>

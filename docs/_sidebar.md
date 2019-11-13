@@ -1,6 +1,6 @@
 <!-- 目录 -->
 * Introduction
-    * [简介](README.md)
+    * [简介](/README.md)
 
 * JavaScript
     * [数据类型](/javascript/datatype.md)
@@ -16,7 +16,7 @@
     * [exports和module.exports的区别](/javascript/exports.md)
     * [递归](/javascript/recircleFun.md)
 
-
+aSSAD
 * Node系列
     * [node.js究竟是什么](/node/what.md)
     * [node事件循环](/node/eventLoop.md)
@@ -32,7 +32,7 @@
 
 - DataBase
     - [数据库类型](/database/README.md)
-    - <details><summary><b>Redis</b></summary>
+    <!-- - <details><summary><b>Redis</b></summary> -->
       <!-- <p>
 
         - [基础总结](/database/redis.md)
@@ -45,8 +45,8 @@
         - [面试指南](/database/redis-interview.md)
 
       </p> -->
-      </details>
-    - <details><summary><b>MySql</b></summary>
+      <!-- </details> -->
+    <!-- - <details><summary><b>MySql</b></summary>
       <p>
 
         - [基础架构](/database/mysql/baseFrame.md)
@@ -55,7 +55,7 @@
         - [sql优化实例](/database/mysql/optimize.md)
 
       </p>
-      </details>
+      </details> -->
 * 前端框架
     - [vue组件通信方式](/webframe/vue/messageWays.md)
 

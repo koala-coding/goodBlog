@@ -1,0 +1,25 @@
+{
+  "name": "ssr-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "docsify start . -c ssr.config.js",
+    "deploy": "now -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "now": {
+    "alias": "docsify",
+    "env": {
+      "NODE_ENV": "production",
+      "DEBUG": "docsify"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "docsify-cli": "^4.1.7",
+    "now": "^6.2.0"
+  }
+}
