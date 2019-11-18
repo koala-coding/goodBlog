@@ -29,17 +29,16 @@
 * 浏览器系列
     * [渲染树的形成原理](/brower/renderTree.md)
 
+* Typescript系列
+    * [接口篇 --interface](/typescript/interface.md)
+
 - DataBase
-    - [数据库类型](/database/README.md)
+    - [基础架构](/database/mysql/baseFrame.md)
+    - [日志系统](/database/mysql/logSystem.md)
+    - [sql原生语句](/database/mysql/sql.md)
+    - [sql优化实例](/database/mysql/optimize.md)
     <!-- - <details><summary><b>Redis</b></summary> -->
       <!-- <p>
-
-        - [基础总结](/database/redis.md)
-        - [主从复制](/database/redis-master-slave.md)
-        - [数据持久化](/database/redis-persistence.md)
-        - [哨兵高可用](/database/redis-sentinel.md)
-        - [集群模式](/database/redis-cluster.md)
-        - [缓存设计](/database/redis-cache.md)
         - [应用场景](/database/redis-scene.md)
         - [面试指南](/database/redis-interview.md)
 
@@ -55,6 +54,7 @@
 
       </p>
       </details> -->
+
 * 前端框架
     - [vue组件通信方式](/webframe/vue/messageWays.md)
 

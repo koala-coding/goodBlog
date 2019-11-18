@@ -36,6 +36,10 @@
   - [进程与线程][深入理解进程与线程](/docs/node/processAndThread.md)
   - [常见误区][nodejs十个常见误区](/docs/node/errors.md)
 
+  
+- #### Typescript系列
+    - [接口篇 --interface](/typescript/interface.md)
+
 - #### DataBase
   - ##### MySql
     - [基础架构][基础架构](/docs/database/mysql/baseFrame.md)
