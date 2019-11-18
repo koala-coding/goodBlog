@@ -38,7 +38,7 @@
 
   
 - #### Typescript系列
-    - [接口篇 --interface](/typescript/interface.md)
+    - [接口篇 --interface](/docs/typescript/interface.md)
 
 - #### DataBase
   - ##### MySql
