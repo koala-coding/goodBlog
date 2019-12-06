@@ -99,11 +99,12 @@ bar()
 
 所以this指向了obj
 - bar() 转化为call的形式就是bar.call()
-由于没有传 context，所以 this 就是 undefined，如果是在浏览器中最后给你一个默认的 this——window 对象。如果是在 Node.js 环境中运行 this——globel对象。
-在浏览器中运行结果为5 在 Node.js 环境中为 undefined。
+由于没有传 context，所以 this 就是 undefined。
+如果是在浏览器中，默认的 this 就是 window 对象；如果是在 Node.js 环境中默认的 this 就是 global 对象。
+最终，在浏览器中运行结果为 5；在 Node.js 环境中为 undefined。
 
 ### Node.js 环境下指向全局的this关键字说明(你可能不知道)
-为什么在浏览器或者前端环境可以直接正常输出值，而在 Node.js  环境中输出的却是`undefined`。
+为什么在浏览器或者前端环境可以直接正常输出值，而在 Node.js 环境中输出的却是`undefined`。
 看一下这段代码你可能就懂了。
 
 ```javascript
