@@ -117,7 +117,7 @@ outer();
 
 `ToPrimitive`对原始类型不发生转换处理，只**针对引用类型（object）的**，其目的是将引用类型（object）转换为非对象类型，也就是原始类型。
 
-`ToPrimitive` 运算符**接受一个值，和一个可选的期望类型作参数**。`ToPrimitive` 运算符将值转换为非对象类型，如果对象有能力被转换为不止一种原语类型，可以使用可选的 **期望类型** 来暗示那个类型。
+`ToPrimitive` 运算符**接受一个值，和一个可选的期望类型作参数**。`ToPrimitive` 运算符将值转换为非对象类型，如果对象有能力被转换为不止一种原始类型，可以使用可选的 **期望类型** 来暗示那个类型。
 
 转换后的结果**原始类型**是由期望类型决定的，期望类型其实就是我们传递的`type`。直接看下面比较清楚。
 `ToPrimitive`方法大概长这么个样子具体如下。
@@ -503,7 +503,7 @@ obj instanceof Object   // true
 
 还有一点需要说明下，有些开发者会说 `Object.prototype.__proto__ === null`，岂不是说 `arr instanceof null` 也应该为 `true`，这个语句其实会报错提示右侧参数应该为对象，这也印证 `typeof null` 的结果为 `object` 真的只是`javascript`中的一个` bug` 。
 
-
+### Object.prototype.toString()
 `Object.prototype.toString()` 可以说是判定 `JavaScript` 中数据类型的终极解决方法了，具体用法请看以下代码：
 
 ```javascript

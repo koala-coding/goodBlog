@@ -59,7 +59,7 @@ class Greet {
   }
 }
 ```
-在类的外部或去#name变量会抛出异常
+在类的外部获取#name变量会抛出异常
 
 ```javascript
 const greet = new Greet()
