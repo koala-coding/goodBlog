@@ -116,18 +116,18 @@ BFC(Block Formatting Context)，**块级格式化上下文**，是一个独立�
 	 
     2. 已知元素宽高:  绝对定位+负margin
    		 ```css 
-		   div{
-	        width: 200px;
-	        height: 200px;
-	        background: green;
-	        
-	        position:absolute;
-	        left:0;
-	        top: 0;
-	        bottom: 0;
-	        right: 0;
-	        margin: auto;
-	    }
+		   
+		div{
+		    width: 200px;
+		    height: 200px;
+		    background: green;
+
+		    position:absolute;
+		    top: 50%;
+		    left: 50%;
+		    margin-left: -100px;
+		    margin-top: -100px;
+		}
 		 ```
     3. `absolute+transform`
    ```css 
