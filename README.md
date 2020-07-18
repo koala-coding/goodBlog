@@ -4,14 +4,17 @@
 [<img src="https://img.shields.io/badge/思否-2.5k-42b983.svg">](https://segmentfault.com/u/na_5a545653c24d9)
 [<img src="https://img.shields.io/badge/慕课-认证作者-42b983.svg">](https://segmentfault.com/u/na_5a545653c24d9)
 
-> 这里是 koala 的博客, 最近在做一个node高级进阶的学习路线, 
+> 这里是 `koala` 的博客, 最近在做一个node高级进阶的学习路线,
+ 
+[文章在线阅读体验更好，点这里](http://www.inode.club) 
+
+
 
 **支持一下**
 - 搜索公众号 **```程序员成长指北```** 或者 **```扫描下方二维码```** 进行关注
 - [Github链接在此, 欢迎点个 Start](https://github.com/koala-coding/goodBlog)
 - 将好文章分享给您身边更多的小伙伴
 
-#### [文章在线阅读](http://www.inode.club) 
 
 ### 博客技术栈目录
 - #### JavaScript必知必会
