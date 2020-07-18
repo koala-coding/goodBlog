@@ -1,24 +1,29 @@
+---
+title: 深入理解Node.js 中的进程与线程
+date: 2019-08-08
+tags:
+   - Node.js
+   - 进程
+   - 线程
+---
 
-## 前言
+
+**前言**
+
 `进程`与`线程`是一个程序员的必知概念，面试经常被问及，但是一些文章内容只是讲讲理论知识，可能一些小伙伴并没有真的理解，在实际开发中应用也比较少。本篇文章除了介绍概念，通过Node.js 的角度讲解`进程`与`线程`，并且讲解一些在项目中的实战的应用，让你不仅能迎战面试官还可以在实战中完美应用。
 
 ## 文章导览
 
-![](https://user-gold-cdn.xitu.io/2019/8/8/16c6cf612c275894?w=2772&h=1104&f=jpeg&s=377258)
+![](http://img.xiaogangzai.cn/16c6cf612c275894.jpg)
 
 ## 面试会问
 
-> Node.js是单线程吗？
-
-> Node.js 做耗时的计算时候，如何避免阻塞？
-
-> Node.js如何实现多进程的开启和关闭？
-
-> Node.js可以创建线程吗？
-
-> 你们开发过程中如何实现进程守护的？
-
-> 除了使用第三方模块，你们自己是否封装过一个多进程架构?
+> - Node.js是单线程吗？
+> - Node.js 做耗时的计算时候，如何避免阻塞？
+> - Node.js如何实现多进程的开启和关闭？
+> - Node.js可以创建线程吗？
+> - 你们开发过程中如何实现进程守护的？
+> - 除了使用第三方模块，你们自己是否封装过一个多进程架构?
 
 ## 进程
 进程`Process`是计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调度的基本单位，是操作系统结构的基础，进程是线程的容器（来自百科）。进程是资源分配的最小单位。我们启动一个服务、运行一个实例，就是开一个服务进程，例如 Java 里的 JVM 本身就是一个进程，Node.js 里通过 `node app.js` 开启一个服务进程，多进程就是进程的复制（fork），fork 出来的每个进程都拥有自己的独立空间地址、数据栈，一个进程无法访问另外一个进程里定义的变量、数据结构，只有建立了 IPC 通信，进程之间才可数据共享。
@@ -36,7 +41,7 @@ server.listen(3000,()=>{
 ```
 运行上面代码后，以下为 Mac 系统自带的监控工具 “活动监视器” 所展示的效果，可以看到我们刚开启的 Nodejs 进程 7663
 
-![](https://user-gold-cdn.xitu.io/2019/8/1/16c4dc0ca13fec40?w=1406&h=1182&f=jpeg&s=131412)
+![](http://img.xiaogangzai.cn/progress_002.jpg)
 
 ## 线程
 线程是操作系统能够进行运算调度的最小单位，首先我们要清楚线程是隶属于进程的，被包含于进程之中。**一个线程只能隶属于一个进程，但是一个进程是可以拥有多个线程的**。
@@ -115,9 +120,9 @@ Node.js 中的进程 Process 是一个全局对象，无需 require 直接使用
 #### Node.js 进程创建
 进程创建有多种方式，本篇文章以child_process模块和cluster模块进行讲解。
 
-##### child_process模块
-child_process 是 Node.js 的内置模块，官网地址：
-> child_process 官网地址：http://nodejs.cn/api/child_process.html#child_process_child_process
+**child_process模块**
+
+child_process 是 Node.js 的内置模块，node官网地址：[child_process 官网地址](http://nodejs.cn/api/child_process.html#child_process_child_process)
 
 几个常用函数：
 四种方式
@@ -129,11 +134,13 @@ child_process 是 Node.js 的内置模块，官网地址：
 > CPU 核心数这里特别说明下，fork 确实可以开启多个进程，但是并不建议衍生出来太多的进程，cpu核心数的获取方式`const cpus = require('os').cpus();`,这里 cpus 返回一个对象数组，包含所安装的每个 CPU/内核的信息，二者总和的数组哦。假设主机装有两个cpu，每个cpu有4个核，那么总核数就是8。
 
 
-###### fork开启子进程 Demo
+**fork开启子进程 Demo**
+
 fork开启子进程解决文章起初的计算耗时造成线程阻塞。
 在进行 compute 计算时创建子进程，子进程计算完成通过 `send` 方法将结果发送给主进程，主进程通过 `message` 监听到信息后处理并退出。
 
-> fork_app.js
+---
+fork_app.js
 
 ```javascript
 const http = require('http');
@@ -164,7 +171,8 @@ server.listen(3000, 127.0.0.1, () => {
 });
 ```
 
-> fork_compute.js
+---
+fork_compute.js
 
 针对文初需要进行计算的的例子我们创建子进程拆分出来单独进行运算。
 
@@ -220,7 +228,8 @@ if(cluster.isMaster){
 ###### cluster原理分析
 
 
-![](https://user-gold-cdn.xitu.io/2019/8/3/16c5658b2e97e9b2)
+![](http://img.xiaogangzai.cn/progress_001.jpg)
+
 cluster模块调用fork方法来创建子进程，该方法与child_process中的fork是同一个方法。
 cluster模块采用的是经典的主从模型，Cluster会创建一个master，然后根据你指定的数量复制出多个子进程，可以使用`cluster.isMaster`属性判断当前进程是master还是worker(工作进程)。由master进程来管理所有的子进程，主进程不负责具体的任务处理，主要工作是负责调度和管理。
 
@@ -233,10 +242,11 @@ cluster模块使用内置的负载均衡来更好地处理线程之间的压力�
 
 cluster模块的一个弊端：
 
-![](https://user-gold-cdn.xitu.io/2019/8/3/16c565aaeb065b4a?w=501&h=261&f=png&s=23033)
+![](http://img.xiaogangzai.cn/progress_004.jpg)
 
 
-![](https://user-gold-cdn.xitu.io/2019/9/6/16d04aa5bbe66349?w=501&h=261&f=png&s=20217)
+![](http://img.xiaogangzai.cn/progress_001.jpg)
+
 cluster内部隐时的构建TCP服务器的方式来说对使用者确实简单和透明了很多，但是这种方式无法像使用child_process那样灵活，因为一直主进程只能管理一组相同的工作进程，而自行通过child_process来创建工作进程，一个主进程可以控制多组进程。原因是child_process操作子进程时，可以隐式的创建多个TCP服务器，对比上面的两幅图应该能理解我说的内容。
 
 #### Node.js进程通信原理
@@ -246,12 +256,13 @@ IPC这个词我想大家并不陌生，不管那一张开发语言只要提到�
 
 IPC创建和实现示意图
 
-![](https://user-gold-cdn.xitu.io/2019/8/4/16c5b379ad12199e?w=391&h=311&f=png&s=23661)
+![](http://img.xiaogangzai.cn/progress_006.jpg)
 
 IPC通信管道是如何创建的
 
 
-![](https://user-gold-cdn.xitu.io/2019/8/4/16c5b3812e3bb7d9?w=866&h=612&f=jpeg&s=103501)
+![](http://img.xiaogangzai.cn/progress_005.jpg)
+
 父进程在实际创建子进程之前，会创建`IPC通道`并监听它，然后才`真正的`创建出`子进程`，这个过程中也会通过环境变量（NODE_CHANNEL_FD）告诉子进程这个IPC通道的文件描述符。子进程在启动的过程中，根据文件描述符去连接这个已存在的IPC通道，从而完成父子进程之间的连接。
 
 #### Node.js句柄传递
@@ -268,7 +279,8 @@ IPC通信管道是如何创建的
 
 结合句柄的发送与还原示意图更容易理解。
 
-![](https://user-gold-cdn.xitu.io/2019/8/4/16c5b52b15d87bbe?w=916&h=548&f=png&s=82815)
+![](http://img.xiaogangzai.cn/progress_007.jpg)
+
 `send()`方法在将消息发送到IPC管道前，实际将消息组装成了两个对象，一个参数是hadler，另一个是message。message参数如下所示：
 
 ```javascript
@@ -300,7 +312,7 @@ function(message,handle,emit){
 #### Node.js多进程架构模型
 我们自己实现一个多进程架构守护Demo
 
-![](https://user-gold-cdn.xitu.io/2019/8/3/16c565f2d5b5e5c2?w=533&h=352&f=png&s=47188)
+![](http://img.xiaogangzai.cn/16b12df18cc5e443.jpg)
 编写主进程
 
 master.js 主要处理以下逻辑：
@@ -417,49 +429,50 @@ pm2 start app.js --env production --name test
 
 - `pm2 logs [Name]` 查看日志，如果添加服务名称，则指定查看某个服务的日志，不加则查看所有日志
 
-- `pm2 start app.js -i 4` 集群，-i <number of workers>参数用来告诉PM2以cluster_mode的形式运行你的app（对应的叫fork_mode），后面的数字表示要启动的工作线程的数量。如果给定的数字为0，PM2则会根据你CPU核心的数量来生成对应的工作线程。注意一般在生产环境使用cluster_mode模式，测试或者本地环境一般使用fork模式，方便测试到错误。
+- `pm2 start app.js -i 4` 集群，`-i <number of workers>`参数用来告诉PM2以cluster_mode的形式运行你的app（对应的叫fork_mode），后面的数字表示要启动的工作线程的数量。如果给定的数字为0，PM2则会根据你CPU核心的数量来生成对应的工作线程。注意一般在生产环境使用cluster_mode模式，测试或者本地环境一般使用fork模式，方便测试到错误。
 - `pm2 reload Name  pm2 restart Name` 应用程序代码有更新，可以用重载来加载新代码，也可以用重启来完成,reload可以做到0秒宕机加载新的代码，restart则是重新启动，生产环境中多用reload来完成代码更新！
 - `pm2 show Name` 查看服务详情
 - `pm2 list` 查看pm2中所有项目
 - `pm2 monit`用monit可以打开实时监视器去查看资源占用情况
 
 
-**pm2 官网地址：**
-> http://pm2.keymetrics.io/docs/usage/quick-start/
+**pm2 官网地址:**
 
-forever 就不特殊说明了，官网地址
+ [http://pm2.keymetrics.io/docs/usage/quick-start/](http://pm2.keymetrics.io/docs/usage/quick-start/)
 
-> https://github.com/foreverjs/forever
+forever 就不特殊说明了，官网地址:
+
+ [https://github.com/foreverjs/forever](https://github.com/foreverjs/forever)
 
 > 注意：二者更推荐pm2，看一下二者对比就知道我为什么更推荐使用pm2了。https://www.jianshu.com/p/fdc12d82b661
 
 #### linux 关闭一个进程
 - 查找与进程相关的PID号
 
-    ps aux | grep server  
+    `ps aux | grep server  `
+
 说明:
 
 ```
-    root     20158  0.0  5.0 1251592 95396 ?       Sl   5月17   1:19 node /srv/mini-program-api/launch_pm2.js
+    root 20158  0.0  5.0 1251592 95396 ?  Sl   5月17   1:19 node /srv/mini-program-api/launch_pm2.js
 ```
-    上面是执行命令后在linux中显示的结果，第二个参数就是进程对应的PID
-
-
+上面是执行命令后在linux中显示的结果，第二个参数就是进程对应的PID
 
 - 杀死进程
 
 1. 以优雅的方式结束进程
 
-   kill -l PID
-   
-    -l选项告诉kill命令用好像启动进程的用户已注销的方式结束进程。
-当使用该选项时，kill命令也试图杀死所留下的子进程。
+   `kill -l PID`
+
+    `-l`选项告诉 `kill` 命令用好像启动进程的用户已注销的方式结束进程。
+当使用该选项时，`kill`命令也试图杀死所留下的子进程。
 但这个命令也不是总能成功--或许仍然需要先手工杀死子进程，然后再杀死父进程。
 
 2.    kill 命令用于终止进程
     
-    例如： `kill -9 [PID]`
--9 表示强迫进程立即停止
+例如： `kill -9 [PID]`
+
+`-9` 表示强迫进程立即停止
 
     这个强大和危险的命令迫使进程在运行时突然终止，进程在结束后不能自我清理。
     危害是导致系统资源无法正常释放，一般不推荐使用，除非其他办法都无效。
@@ -469,7 +482,7 @@ forever 就不特殊说明了，官网地址
     如果系统中有僵尸进程，并且其父进程是init，
     而且僵尸进程占用了大量的系统资源，那么就需要在某个时候重启机器以清除进程表了。
 
-3. killall命令
+1. killall命令
 
     杀死同一进程组内的所有进程。其允许指定要终止的进程的名称，而非PID。
     
@@ -525,7 +538,7 @@ Libuv 是一个跨平台的异步IO库，它结合了UNIX下的libev和Windows�
 
 libuv架构图
 
-![](https://user-gold-cdn.xitu.io/2019/8/3/16c565ec3aaa0424?w=323&h=156&f=jpeg&s=7864)
+![](http://img.xiaogangzai.cn/progress_008.jpg)
 
 
 在Window环境下，libuv直接使用Windows的IOCP来实现异步IO。在非Windows环境下，libuv使用多线程来模拟异步IO。
@@ -579,7 +592,7 @@ if (isMainThread) {
 
 由于 worker_thread 目前仍然处于实验阶段，所以启动时需要增加 --experimental-worker flag，运行后观察活动监视器，开启了5个子线程
 
-![](https://user-gold-cdn.xitu.io/2019/8/8/16c6cfb939b5b268?w=1306&h=238&f=jpeg&s=49232)
+![](http://img.xiaogangzai.cn/progress_009.jpg)
 
 ##### worker_thread 模块
 worker_thread 核心代码（地址https://github.com/nodejs/node/blob/master/lib/worker_threads.js）
@@ -614,6 +627,5 @@ coding | 编码简单、调试方便 |编码、调试复杂 | 编码、调试复
 - 朴灵老师的书籍【Node.js 深入浅出】
 - 淘宝前端团队cluster讲解:http://taobaofed.org/blog/2015/11/03/nodejs-cluster/
 
-加入我们一起学习吧！
-![](https://user-gold-cdn.xitu.io/2019/6/25/16b8a3d23a52b7d0?w=940&h=400&f=jpeg&s=217901)
+
 node学习交流群

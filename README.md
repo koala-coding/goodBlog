@@ -15,17 +15,17 @@
 
 ### 博客技术栈目录
 - #### JavaScript必知必会
-  - [数据类型][经常被面试官问道的JavaScript数据类型知识你真的懂吗？](/docs/javascript/datatype.md)
-  - [作用域][深入理解 JavaScript, 从作用域与作用域链开始](/docs/javascript/scoped.md)
-  - [闭包][javascript中的闭包这一篇就够了](/docs/javascript/closure.md)
-  - [高阶函数][高阶函数详解与实战训练](/docs/javascript/higherFunc.md)
-  - [赋值拷贝][js中赋值•浅拷贝•深拷贝](/docs/javascript/copy.md)
-  - [原型链][原型链这么看好像并不难](/docs/javascript/prototype.md)
-  - [类与继承][ES6中类与继承的理解（java对比记忆）](/docs/javascript/classInherit.md)
-  - [this关键字][this关键字](/docs/javascript/this.md)
-  - [promise][promise](/docs/javascript/promise.md)
-  - [async和await][async和await讲解](/docs/javascript/async-await.md)
-  - [exports和module.exports][exports和module.exports的区别](/docs/javascript/exports.md)  
+  - [数据类型][经常被面试官问道的JavaScript数据类型知识你真的懂吗？](/docs/webframe/javascript/datatype.md)
+  - [作用域][深入理解 JavaScript, 从作用域与作用域链开始](/docs/webframe/javascript/scoped.md)
+  - [闭包][javascript中的闭包这一篇就够了](/docs/javascript/webframe/closure.md)
+  - [高阶函数][高阶函数详解与实战训练](/docs/webframe/javascript/higherFunc.md)
+  - [赋值拷贝][js中赋值•浅拷贝•深拷贝](/docs/webframe/javascript/copy.md)
+  - [原型链][原型链这么看好像并不难](/docs/webframe/javascript/prototype.md)
+  - [类与继承][ES6中类与继承的理解（java对比记忆）](/docs/webframe/es6/classInherit.md)
+  - [this关键字][this关键字](/docs/webframe/javascript/this.md)
+  - [promise][promise](/docs/webframe/es6/promise.md)
+  - [async和await][async和await讲解](/docs/webframe/es6/async-await.md)
+  - [exports和module.exports][exports和module.exports的区别](/docs/webframe/javascript/exports.md)  
 
 - #### Nodejs系列
   - [了解nodejs][node.js究竟是什么](/docs/node/what.md)

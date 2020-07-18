@@ -1,9 +1,15 @@
-## 什么是stream
-### 定义
+---
+title: Node.js中stream模块详解
+date: 2019-06-14
+tags:
+   - Node.js
+---
+
+### stream定义
 流的英文`stream`，流（Stream）是一个抽象的数据接口，`Node.js`中很多对象都实现了流，流是`EventEmitter`对象的一个实例，总之它是会冒数据（以 `Buffer` 为单位），或者能够吸收数据的东西，它的本质就是让数据流动起来。
 可能看一张图会更直观：
 
-![水桶管道流转图](https://user-gold-cdn.xitu.io/2019/7/10/16bdbb113be0341a?w=305&h=290&f=png&s=6680)
+![水桶管道流转图](http://img.xiaogangzai.cn/16bdbb113be0341a.jpg)
 
 
 注意：`stream`不是node.js独有的概念，而是一个操作系统最基本的操作方式，只不过node.js有API支持这种操作方式。linux命令的|就是`stream`。
@@ -52,7 +58,8 @@ server.listen(8000);
 ## stream流转过程
 再次看这张`水桶管道流转图`
 
-![水桶管道流转图](https://user-gold-cdn.xitu.io/2019/7/10/16bdbd2645a37943?w=305&h=290&f=png&s=6680)
+![水桶管道流转图](http://img.xiaogangzai.cn/16bdbb113be0341a.jpg)
+
 图中可以看出，`stream`整个流转过程包括source，dest，还有连接二者的管道pipe(stream的核心)，分别介绍三者来带领大家搞懂stream流转过程。
 ### stream从哪里来-soucre
 `stream`的常见来源方式有三种：
@@ -179,7 +186,7 @@ const downloadFile=async (src, localFilePath, data)=> {
 
 request和reponse一样，都是stream对象，可以使用stream的特性，二者的区别在于，我们再看一下`水桶管道流转图`，
 
-![](https://user-gold-cdn.xitu.io/2019/7/10/16bdc4cdc5cdccc4?w=305&h=290&f=png&s=6680)
+![](http://img.xiaogangzai.cn/16bdbb113be0341a.jpg)
 request是source类型，是图中的源头，而response是dest类型，是图中的目的地。
 
 ### 在文件操作中使用stream

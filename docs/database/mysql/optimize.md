@@ -1,14 +1,21 @@
-## 快速导航
-正在整理中...
+---
+title: 常用的数据库语句
+date: 2019-05-18
+tags:
+   - 数据库
+---
+ 
+[[toc]]
+
 > 需求1: 最近写的一个用户数据统计相关接口，需要用到按照每天进行分组统计。
 
 
-### 直接看语句 
+## 直接看语句 
 
 ```
 SELECT DATE_FORMAT( create_time, "%Y-%m-%d" ) ,sum(user_id) FROM orders WHERE order_state=2 GROUP BY DATE_FORMAT( create_time, "%Y-%m-%d" ) ;
 ```
-### DATE_FORMAT函数说明
+## DATE_FORMAT函数说明
 
 - 语法
 
@@ -60,7 +67,7 @@ date 参数是合法的日期。format 规定日期/时间的输出格式。
 
 
 
-> 需求2: 查询结果单位换算后保留两位小数
+## > 需求2: 查询结果单位换算后保留两位小数
 
 #### 数据库表中sale列的值为23456.789
 1. format函数 

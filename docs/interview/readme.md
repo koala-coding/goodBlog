@@ -1,0 +1,43 @@
+# 面试
+
+### vue相关
+- [对于MVVM的理解](./vue.md#对于mvvm的理解)
+- [开发中常用的指令有哪些](./vue.md#开发中常用的指令有哪些)
+- [请详细说下你对vue生命周期的理解](./vue.md#请详细说下你对vue生命周期的理解)
+- [Vue的双向数据绑定原理是什么](./vue.md#vue的双向数据绑定原理是什么)
+- [Proxy相比于defineProperty的优势](./vue.md#proxy相比于defineproperty的优势)
+- [vue-router有哪几种导航守卫?](./vue.md#vue-router有哪几种导航守卫)
+- [Vue的路由实现：hash模式 和 history模式](./vue.md#vue的路由实现-hash模式和history模式)
+- [组件之间的传值通信](./vue.md#组件之间的传值通信)  
+- [Vue与Angular以及React的区别？](./vue.md#vue与angular以及react的区别？)
+- [vuex是什么？怎么使用？哪种功能场景使用它？](./vue.md#vuex是什么？怎么使用？哪种功能场景使用它？)
+
+### javascript
+- [1.说说你对闭包的认识](/interview/js10.html#_1-说说你对闭包的认识)
+- [2. 跨域问题有哪些处理方式#跨域解决方案](/interview/js10.html#_2-跨域问题有哪些处理方式)
+- [3. for...in 和 for...of的区别](/interview/js10.html#_3-for-in-和-for-of的区别)
+- [4. new一个对象, 这个过程中发生了什么](/interview/js10.html#_4-new一个对象-这个过程中发生了什么)
+- [5. js的防抖和节流是什么](/interview/js10.html#_5-js的防抖和节流是什么)
+- [6. 数组中常用的方法有哪些](/interview/js10.html#_6-数组中常用的方法有哪些)
+- [7. 怎么判断一个object是否是数组](/interview/js10.html#_7-怎么判断一个object是否是数组)
+- [8. 继承有哪些方式](/interview/js10.html#_8-继承有哪些方式)
+- [9. 说说js中call,apply,bind之间的关系](/interview/js10.html#_9-说说js中call-apply-bind之间的关系)
+- [10. Promise](/interview/js10.html#_10-promise系)
+- [11. 如何实现数组去重](/interview/unique.html)
+- [12. `手写代码`实现new创建对象](/interview/rewriteJs.html#模仿实现new创建对象)
+- [13. `手写代码`实现instanceof](/interview/rewriteJs.html#模仿实现instanceof)
+- [14. `手写代码`实现call](/interview/rewriteJs.html#模仿实现call)
+- [15. `手写代码`实现apply](/interview/rewriteJs.html#模仿实现apply)
+- [16. `手写代码`实现bind](/interview/rewriteJs.html#模仿实现bind)
+
+### css
+- [1. BFC机制](/interview/css.html#_1-bfc机制)
+- [2. CSS3中新增的选择器以及属性](/interview/css.html#_2-css3中新增的选择器以及属性)
+- [3. 居中布局](/interview/css.html#_3-居中布局)
+- [4. 清除浮动有哪些方法, 各有什么优缺点](/interview/css.html#_4-清除浮动有哪些方法-各有什么优缺点)
+- [5. 用纯CSS创建一个三角形的原理是什么](/interview/css.html#_5-用纯css创建一个三角形的原理是什么)
+- [6. 实现三栏布局有哪些方法, 分别描述一下](/interview/css.html#__6-实现三栏布局有哪些方法-分别描述一下)
+- [7. css3实现0.5px的细线](/interview/css.html#_7-css3实现0-5px的细线)
+- [8. link 与 @import 的区别](/interview/css.html#_8-link-与-import-的区别)
+- [9. 开发中为什么要初始化css样式](/interview/css.html#_9-开发中为什么要初始化css样式)
+- [10. CSS优化、提高性能的方法有哪些](/interview/css.html#_10-css优化、提高性能的方法有哪些)

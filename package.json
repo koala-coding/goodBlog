@@ -1,0 +1,22 @@
+{
+  "authors": {
+    "mame": "koala",
+    "email": ""
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.2.0",
+    "@vuepress/plugin-back-to-top": "^1.2.0",
+    "@vuepress/plugin-nprogress": "^1.2.0",
+    "vuepress": "^1.2.0"
+  },
+  "dependencies": {
+    "leancloud-storage": "^4.1.0",
+    "mddir": "^1.1.1",
+    "valine": "^1.4.14"
+  }
+}

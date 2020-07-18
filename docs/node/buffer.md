@@ -1,11 +1,20 @@
+---
+title: Node.js核心模块-buffer
+date: 2019-06-09
+tags:
+   - Node.js
+---
 
-## 前言
-写完上一篇文章[想学Node.js，stream先有必要搞清楚](https://juejin.im/post/5d25ce36f265da1ba84ab97a)
+
+**前言**
+
+写完上一篇文章[想学Node.js，stream先有必要搞清楚](/node/stream.md)
 留下了悬念，`stream`对象数据流转的具体内容是什么？本篇文章将为大家进行深入讲解。
 
 
 ## Buffer探究 
 看一段之前使用`stream`操作文件的例子：
+
 ```JavaScript
 var fileName = path.resolve(__dirname, 'data.txt');
 var stream=fs.createReadStream(fileName);
@@ -17,10 +26,10 @@ stream.on('data',function(chunk){
 ```
 看一下打印结果，发现第一个stream是一个对象 ，截图部分内容。
 
-![](https://user-gold-cdn.xitu.io/2019/7/17/16bfd60a4f3b2069?w=872&h=722&f=jpeg&s=101462)
+![](http://img.xiaogangzai.cn/node_buffer_07.jpg)
 第二个和第三个打印结果，
 
-![](https://user-gold-cdn.xitu.io/2019/7/17/16bfd601607b160c?w=1372&h=80&f=jpeg&s=34184)
+![](http://img.xiaogangzai.cn/node_buffer_08.jpg)
 Buffer对象，类似数组，它的元素为16进制的两位数，即0到255的数值。可以看出stream中流动的数据是Buffer类型，二进制数据，接下来开始我们的Buffer探索之旅。
 
 ## 什么是二进制
@@ -172,7 +181,7 @@ function allocate(size)
 ```
 源码直接看来就是以8KB作为界限，如果写入的数据大于8KB一半的话直接则直接去分配内存，如果小于4KB的话则从当前分配池里面判断是否够空间放下当前存储的数据，如果不够则重新去申请8KB的内存空间，把数据存储到新申请的空间里面，如果足够写入则直接写入数据到内存空间里面，下图为其内存分配策略。
 
-![Buffer内存分配策略图](https://user-gold-cdn.xitu.io/2019/7/16/16bfa9c8e4af644f?w=664&h=446&f=png&s=29461)
+![Buffer内存分配策略图](http://img.xiaogangzai.cn/node_buffer_09.jpg)
 看内存分配策略图，如果当前存储了2KB的数据，后面要存储5KB大小数据的时候分配池判断所需内存空间大于4KB，则会去重新申请内存空间来存储5KB数据并且分配池的当前偏移指针也是指向新申请的内存空间，这时候就之前剩余的6KB(8KB-2KB)内存空间就会被搁置。至于为什么会用`8KB`作为`存储单元`分配，为什么大于`8KB`按照大内存分配策略，在下面`Buffer`内存分配机制优点有说明。
 
 

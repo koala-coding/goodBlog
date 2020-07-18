@@ -1,23 +1,40 @@
+---
+title: vue常考面试题
+date:  2019-06-28
+tags:
+   - Vue
+   - 面试
+---
+
 ## 快速导航
 
-- [对于MVVM的理解](#对于MVVM的理解)
+- [快速导航](#快速导航)
+- [对于MVVM的理解](#对于mvvm的理解)
 - [开发中常用的指令有哪些](#开发中常用的指令有哪些)
 - [请详细说下你对vue生命周期的理解](#请详细说下你对vue生命周期的理解)
-- [Vue的双向数据绑定原理是什么](#Vue的双向数据绑定原理是什么)
-- [Proxy相比于defineProperty的优势](#Proxy相比于defineProperty的优势)
-- [vue-router有哪几种导航守卫?](#vue-router有哪几种导航守卫)
-    * [1.全局守卫](#_1全局守卫)
-    * [2.路由独享守卫](#_2路由独享守卫)
-    * [3.路由组件内的守卫](#_3路由组件内的守卫)
-- [Vue的路由实现：hash模式 和 history模式](#Vue的路由实现hash模式和history模式)
-    * [hash模式](#hash模式：)
-    * [history模式：](#history模式：)
+- [Vue的双向数据绑定原理是什么](#vue的双向数据绑定原理是什么)
+- [Proxy相比于defineProperty的优势](#proxy相比于defineproperty的优势)
+- [vue-router有哪几种导航守卫](#vue-router有哪几种导航守卫)
+  - [1.全局守卫](#1全局守卫)
+  - [2.路由独享守卫](#2路由独享守卫)
+  - [3.路由组件内的守卫](#3路由组件内的守卫)
+- [Vue的路由实现:hash模式和history模式](#vue的路由实现hash模式和history模式)
+  - [hash模式：](#hash模式)
+  - [history模式：](#history模式)
 - [组件之间的传值通信](#组件之间的传值通信)
-    * [1.父组件给子组件传值](#_1父组件给子组件传值)
-    * [2.子组件向父组件通信](#_2子组件向父组件通信)
-    * [3.非父子, 兄弟组件之间通信](#_3非父子,兄弟组件之间通信)
-- [Vue与Angular以及React的区别？](#Vue与Angular以及React的区别？)
-- [vuex是什么？怎么使用？哪种功能场景使用它？](#vuex是什么？怎么使用？哪种功能场景使用它？)
+    - [1.父组件给子组件传值](#1父组件给子组件传值)
+    - [2.子组件向父组件通信](#2子组件向父组件通信)
+  - [3.非父子,兄弟组件之间通信](#3非父子兄弟组件之间通信)
+- [Vue与Angular以及React的区别？](#vue与angular以及react的区别)
+    - [Vue与AngularJS的区别](#vue与angularjs的区别)
+    - [Vue与React的区别](#vue与react的区别)
+- [vuex是什么？怎么使用？哪种功能场景使用它？](#vuex是什么怎么使用哪种功能场景使用它)
+    - [state](#state)
+    - [mutations](#mutations)
+    - [getters](#getters)
+    - [action](#action)
+  - [公众号技术栈路线](#公众号技术栈路线)
+  - [加入我们](#加入我们)
 
 
 ## 对于MVVM的理解

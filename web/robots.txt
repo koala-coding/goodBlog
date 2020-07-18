@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /assets/js
+
+http://inode.club/sitemap.txt

@@ -1,8 +1,15 @@
-![](https://user-gold-cdn.xitu.io/2019/7/14/16bec4b8fdb8d01f?w=900&h=383&f=png&s=37962)
-## 前言
+---
+title: node核心模块 -文件路径path
+date: 2019-07-30
+tags:
+   - Node.js
+---
+
+**前言**
+
 之前在做`webpack`配置时候多次用到路径相关内容，最近在写项目的时候，有一个文件需要上传到阿里云oss的功能，同时本地服务器也需要保留一个文件备份。多次用到了文件路径相关内容以及Node核心API的`path`模块，所以系统的学习了一下，整理了这篇文章。
 
-## node中的路径分类
+# node中的路径分类
 node中的路径大致分5类，`dirname`,`filename`,`process.cwd()`,`./`,`../`,其中`dirname`,`filename`,`process.cwd()`绝对路径
 
 通过代码对每个分类进行说明：

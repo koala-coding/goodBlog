@@ -1,8 +1,15 @@
+---
+title: node.js十个常见误区
+date: 2019-08-26
+tags:
+   - Node.js
+---
 - 译：koala
 - 原文地址：http://www.toptal.com/nodejs/top-10-common-nodejs-developer-mistakes
 - 原文作者：MAHMUD RIDWAN
 
-## 前言
+**前言**
+
 自 Node.js 面世以来，它获得了大量的赞美和批判。这种争论会一直持续，短时间内都不会结束。而在这些争论中，我们常常会忽略掉所有语言和平台都是基于一些核心问题来批判的，就是我们怎么去使用这些平台。无论使用 Node.js 编写可靠的代码有多难，而编写高并发代码又是多么的简单，这个平台终究是有那么一段时间了，而且被用来创建了大量的健壮而又复杂的 web 服务。这些 web 服务不仅拥有良好的扩展性，而且通过在互联网上持续的时间证明了它们的健壮性。
 
  
@@ -331,7 +338,8 @@ Node.js 有太多的监控程序可以使用了，例如：
 
 
 加入我们一起学习吧！
-![](https://user-gold-cdn.xitu.io/2019/6/25/16b8a3d23a52b7d0?w=940&h=400&f=jpeg&s=217901)
+![](http://img.xiaogangzai.cn/leading.png)
+
 node学习交流群
 
-交流群满100人不能自动进群, 请添加群助手微信号:【coder_qi】备注node，自动拉你入群。
+> 交流群满100人不能自动进群, 请添加群助手微信号:【coder_qi】备注node，自动拉你入群。

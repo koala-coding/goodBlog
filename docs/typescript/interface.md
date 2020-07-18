@@ -1,3 +1,10 @@
+---
+title: Typescript系列之接口篇
+date: 2019-11-18
+tags:
+   - Typescript
+---
+
 ## 接口带来了什么好处
 ### 好处One —— 过去我们写 JavaScript
 JavaScript 中定义一个函数，用来获取一个用户的姓名和年龄的字符串：
