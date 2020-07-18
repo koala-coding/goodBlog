@@ -142,7 +142,7 @@ V8 engine 执行从 `server.listen()` 开始，调用 `builtin module Tcp_wrap` 
 
 - 欢迎加我微信【 ikoala520 】，拉你 进 **Node.js** 高级进阶群，长期交流学习...
 - 欢迎关注「程序员成长指北」,一个用心帮助你成长的公众号...
-![](https://user-gold-cdn.xitu.io/2019/10/29/16e166ee15647127?w=900&h=500&f=png&s=105652)
+![](http://img.xiaogangzai.cn/leading.png)
 
 
 
