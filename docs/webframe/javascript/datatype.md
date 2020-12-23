@@ -320,7 +320,7 @@ console.log('2'+obj1)；
 对下面`'2'+obj2`详细举例说明如下：
 
 1. 左边为`string`，`ToPrimitive`原始值转换后不发生变化
-2. 右边转化时同样按照`ToPrimitive`进行原始值转换，由于指定的type是`number`，进行`ToPrimitive`转化调用`obj2.valueof()`,得到的不是原始值，进行第三步
+2. 右边转化时同样按照`ToPrimitive`进行原始值转换，由于指定的type是`number`，进行`ToPrimitive`转化调用`obj2.valueof()`,得到的不是原始值，进行第二步
 3. 调用`toString()` ` return 'a'`
 4. 符号两边存在`string`，而且是`+`号运算符则都采用`String`规则转换为`string`类型进行拼接 
 5. 输出结果`2a`
