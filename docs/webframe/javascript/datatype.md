@@ -48,7 +48,7 @@ var obj1 = {
    a:1,
    b:2
 }
-console.log('2'+obj1)；
+console.log('2'+obj1);
 
 var obj2 = {
     toString:function(){
